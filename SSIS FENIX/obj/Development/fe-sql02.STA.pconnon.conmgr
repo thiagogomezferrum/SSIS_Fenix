@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="fe-sql02.STA.pconnon"
+  DTS:DTSID="{D097C6A4-C776-4F17-9E1D-26DD04966E6F}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=fe-sql02;User ID=pconnon;Initial Catalog=STA;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-{D097C6A4-C776-4F17-9E1D-26DD04966E6F}fe-sql02.STA.pconnon;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVQtqDDBRU0++yoXwGjUF0gAAAAACAAAAAAADZgAAwAAAABAAAACUbNUHMd3xaBEfp7hN+URwAAAAAASAAACgAAAAEAAAACJfR1VtjWv2+d9nIoK10ZZ4AAAA9UvV6FHZ5brDPlopf+P5mMjoOFIXTG7x8Azb4s4W7oLfkilazb/ZAiAhI0TpO76kLDiHD2PZKcVQaffAGuBt3erCvm9c/R9vYsNEl1/qAI8YN/1KOMvrDHx/E2anAirdfPOuSfevGsgiblNRJ6oT2LxODGclMAGOFAAAALVuRPebTUdGmllXvlD2qZKrWAMj</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

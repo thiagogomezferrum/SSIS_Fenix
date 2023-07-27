@@ -1,0 +1,1311 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="9/29/2021 1:24:42 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="FE-PCONNON"
+  DTS:CreatorName="NTFERRUM\pconnon"
+  DTS:DTSID="{D7877A7E-7728-4546-9C06-0018F96BC77D}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.167"
+  DTS:LocaleID="11274"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="14"
+  DTS:VersionGUID="{0F9C8C40-E244-4E7D-8C4D-5A50FC69476B}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[abm_modelos_fenix.csv]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{70A10940-3DA3-4A32-8654-46BA6A37C8A0}"
+      DTS:ObjectName="abm_modelos_fenix.csv">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="11274"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="\\linuxfil.ntferrum.local\sap-interfaces\PRD\Z19957\MOV_201_202\APROCESAR\abm_modelos_fenix.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="4000"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA"
+              DTS:DTSID="{EA8AEF1A-E472-410E-ACC4-1426A52F9737}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="REFERENCIA"
+              DTS:DTSID="{65B50887-8339-4C0B-B95A-030455597E66}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="15"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MATERIAL"
+              DTS:DTSID="{45CAF68A-1602-4D74-ACB0-E434CB5243A9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="4"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CENTRO"
+              DTS:DTSID="{B2063863-39FC-4A4B-9C44-EE04F0952720}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="4"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ALMACEN"
+              DTS:DTSID="{DF083E96-C16B-498F-BACF-948470A0D46A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MOVIMIENTO"
+              DTS:DTSID="{3943BE91-D645-40C8-A045-74FD2A59F018}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="38"
+              DTS:DataScale="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CANTIDAD"
+              DTS:DTSID="{80DF0E2C-39BF-40DC-9BF9-21B18A0248CC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="4000"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA_PROCESO"
+              DTS:DTSID="{F1C395F0-F276-4BC7-B2B3-8130A93B5F4C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="4000"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HORA_PROCESO"
+              DTS:DTSID="{E052037B-C788-40BA-BACC-600EA093F428}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[abm_modelos_fenix.csv 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{c37a081d-42b2-4580-8cf4-65c2157cb9d8}"
+      DTS:ObjectName="abm_modelos_fenix.csv 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="11274"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\temp\abm_modelos_fenix.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="4000"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA"
+              DTS:DTSID="{C3531D73-772B-4B7F-BE81-B62F69700963}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="REFERENCIA"
+              DTS:DTSID="{29DC2802-CF2B-4E0E-8C86-834574371E40}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="15"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MATERIAL"
+              DTS:DTSID="{FCBFE312-B9B5-4FCE-B54D-FE9BCF2870EB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="4"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CENTRO"
+              DTS:DTSID="{4C78CC36-7452-4716-B32C-7C45D7E30FAB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="4"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ALMACEN"
+              DTS:DTSID="{248497D8-FC0E-4E9E-A85E-41225355155E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MOVIMIENTO"
+              DTS:DTSID="{C9C6F907-EEDD-4B4B-B8B2-A21E975AC60F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="38"
+              DTS:DataScale="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CANTIDAD"
+              DTS:DTSID="{A90ABB23-6F72-4632-AFD5-E6B75CE7036F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="4000"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA_PROCESO"
+              DTS:DTSID="{2577DD63-4FD9-4603-BCC4-D365DF8C183C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="4000"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HORA_PROCESO"
+              DTS:DTSID="{701F1874-8F49-416E-A68C-CD813E97ED9D}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\MOV_201_202"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{2BA2576C-1A31-4E9B-8BCF-322FFA200E0E}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="MOV_201_202"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\MOV_201_202\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="11274"
+              name="Flat File Destination">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\MOV_201_202\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[abm_modelos_fenix.csv]"
+                  connectionManagerRefId="Package.ConnectionManagers[abm_modelos_fenix.csv]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].Columns[FECHA]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="FECHA"
+                      externalMetadataColumnId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA]"
+                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA]" />
+                    <inputColumn
+                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].Columns[REFERENCIA]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="REFERENCIA"
+                      externalMetadataColumnId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[REFERENCIA]"
+                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[REFERENCIA]" />
+                    <inputColumn
+                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].Columns[MATERIAL]"
+                      cachedDataType="wstr"
+                      cachedLength="15"
+                      cachedName="MATERIAL"
+                      externalMetadataColumnId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MATERIAL]"
+                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[MATERIAL]" />
+                    <inputColumn
+                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].Columns[CENTRO]"
+                      cachedDataType="wstr"
+                      cachedLength="4"
+                      cachedName="CENTRO"
+                      externalMetadataColumnId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CENTRO]"
+                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[CENTRO]" />
+                    <inputColumn
+                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].Columns[ALMACEN]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ALMACEN"
+                      externalMetadataColumnId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ALMACEN]"
+                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[ALMACEN]" />
+                    <inputColumn
+                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].Columns[MOVIMIENTO]"
+                      cachedDataType="numeric"
+                      cachedName="MOVIMIENTO"
+                      cachedPrecision="11"
+                      externalMetadataColumnId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MOVIMIENTO]"
+                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[MOVIMIENTO]" />
+                    <inputColumn
+                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].Columns[CANTIDAD]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CANTIDAD"
+                      externalMetadataColumnId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CANTIDAD]"
+                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[CANTIDAD]" />
+                    <inputColumn
+                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].Columns[FECHA_PROCESO]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="FECHA_PROCESO"
+                      externalMetadataColumnId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA_PROCESO]"
+                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA_PROCESO]" />
+                    <inputColumn
+                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].Columns[HORA_PROCESO]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="HORA_PROCESO"
+                      externalMetadataColumnId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[HORA_PROCESO]"
+                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[HORA_PROCESO]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA]"
+                      dataType="wstr"
+                      length="4000"
+                      name="FECHA" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[REFERENCIA]"
+                      dataType="i8"
+                      name="REFERENCIA" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MATERIAL]"
+                      dataType="wstr"
+                      length="15"
+                      name="MATERIAL" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CENTRO]"
+                      dataType="wstr"
+                      length="4"
+                      name="CENTRO" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ALMACEN]"
+                      codePage="65001"
+                      dataType="str"
+                      length="4"
+                      name="ALMACEN" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MOVIMIENTO]"
+                      dataType="numeric"
+                      name="MOVIMIENTO"
+                      precision="11" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CANTIDAD]"
+                      dataType="numeric"
+                      name="CANTIDAD"
+                      precision="38"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA_PROCESO]"
+                      dataType="wstr"
+                      length="4000"
+                      name="FECHA_PROCESO" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[HORA_PROCESO]"
+                      dataType="wstr"
+                      length="4000"
+                      name="HORA_PROCESO" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\MOV_201_202\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">exec INTERFAZ_ABM_MODELOS_FENIX 'semanal'</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\MOV_201_202\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="{6F629885-837D-457B-80EC-A9CB987F09E3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[fe-sql02.WEBAPP.pbi_webapp_ro 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA]"
+                      length="4000"
+                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA]"
+                      name="FECHA"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[REFERENCIA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[REFERENCIA]"
+                      length="10"
+                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[REFERENCIA]"
+                      name="REFERENCIA"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[MATERIAL]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MATERIAL]"
+                      length="15"
+                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[MATERIAL]"
+                      name="MATERIAL"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[CENTRO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CENTRO]"
+                      length="4"
+                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[CENTRO]"
+                      name="CENTRO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[ALMACEN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ALMACEN]"
+                      length="50"
+                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[ALMACEN]"
+                      name="ALMACEN"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[MOVIMIENTO]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MOVIMIENTO]"
+                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[MOVIMIENTO]"
+                      name="MOVIMIENTO"
+                      precision="11"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[CANTIDAD]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CANTIDAD]"
+                      length="50"
+                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[CANTIDAD]"
+                      name="CANTIDAD"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA_PROCESO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA_PROCESO]"
+                      length="4000"
+                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA_PROCESO]"
+                      name="FECHA_PROCESO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[HORA_PROCESO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[HORA_PROCESO]"
+                      length="4000"
+                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[HORA_PROCESO]"
+                      name="HORA_PROCESO"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA]"
+                      dataType="wstr"
+                      length="4000"
+                      name="FECHA" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[REFERENCIA]"
+                      dataType="wstr"
+                      length="10"
+                      name="REFERENCIA" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MATERIAL]"
+                      dataType="wstr"
+                      length="15"
+                      name="MATERIAL" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CENTRO]"
+                      dataType="wstr"
+                      length="4"
+                      name="CENTRO" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ALMACEN]"
+                      dataType="wstr"
+                      length="50"
+                      name="ALMACEN" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MOVIMIENTO]"
+                      dataType="numeric"
+                      name="MOVIMIENTO"
+                      precision="11" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CANTIDAD]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA_PROCESO]"
+                      dataType="wstr"
+                      length="4000"
+                      name="FECHA_PROCESO" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[HORA_PROCESO]"
+                      dataType="wstr"
+                      length="4000"
+                      name="HORA_PROCESO" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA]"
+                      dataType="wstr"
+                      length="4000"
+                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA]"
+                      name="FECHA" />
+                    <outputColumn
+                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[REFERENCIA]"
+                      dataType="wstr"
+                      length="10"
+                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[REFERENCIA]"
+                      name="REFERENCIA" />
+                    <outputColumn
+                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MATERIAL]"
+                      dataType="wstr"
+                      length="15"
+                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MATERIAL]"
+                      name="MATERIAL" />
+                    <outputColumn
+                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CENTRO]"
+                      dataType="wstr"
+                      length="4"
+                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CENTRO]"
+                      name="CENTRO" />
+                    <outputColumn
+                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ALMACEN]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ALMACEN]"
+                      name="ALMACEN" />
+                    <outputColumn
+                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MOVIMIENTO]"
+                      dataType="numeric"
+                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MOVIMIENTO]"
+                      name="MOVIMIENTO"
+                      precision="11" />
+                    <outputColumn
+                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CANTIDAD]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CANTIDAD]"
+                      name="CANTIDAD" />
+                    <outputColumn
+                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA_PROCESO]"
+                      dataType="wstr"
+                      length="4000"
+                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA_PROCESO]"
+                      name="FECHA_PROCESO" />
+                    <outputColumn
+                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[HORA_PROCESO]"
+                      dataType="wstr"
+                      length="4000"
+                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[HORA_PROCESO]"
+                      name="HORA_PROCESO" />
+                    <outputColumn
+                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\MOV_201_202.Paths[OLE DB Source Output]"
+              endId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\MOV_201_202 local"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{91716639-7748-4e59-8f9b-6a00c2e7dc89}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="MOV_201_202 local"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\MOV_201_202 local\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="11274"
+              name="Flat File Destination">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\MOV_201_202 local\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[abm_modelos_fenix.csv 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[abm_modelos_fenix.csv 1]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].Columns[FECHA]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="FECHA"
+                      externalMetadataColumnId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA]"
+                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA]" />
+                    <inputColumn
+                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].Columns[REFERENCIA]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="REFERENCIA"
+                      externalMetadataColumnId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[REFERENCIA]"
+                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[REFERENCIA]" />
+                    <inputColumn
+                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].Columns[MATERIAL]"
+                      cachedDataType="wstr"
+                      cachedLength="15"
+                      cachedName="MATERIAL"
+                      externalMetadataColumnId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MATERIAL]"
+                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[MATERIAL]" />
+                    <inputColumn
+                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].Columns[CENTRO]"
+                      cachedDataType="wstr"
+                      cachedLength="4"
+                      cachedName="CENTRO"
+                      externalMetadataColumnId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CENTRO]"
+                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[CENTRO]" />
+                    <inputColumn
+                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].Columns[ALMACEN]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ALMACEN"
+                      externalMetadataColumnId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ALMACEN]"
+                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[ALMACEN]" />
+                    <inputColumn
+                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].Columns[MOVIMIENTO]"
+                      cachedDataType="numeric"
+                      cachedName="MOVIMIENTO"
+                      cachedPrecision="11"
+                      externalMetadataColumnId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MOVIMIENTO]"
+                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[MOVIMIENTO]" />
+                    <inputColumn
+                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].Columns[CANTIDAD]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CANTIDAD"
+                      externalMetadataColumnId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CANTIDAD]"
+                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[CANTIDAD]" />
+                    <inputColumn
+                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].Columns[FECHA_PROCESO]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="FECHA_PROCESO"
+                      externalMetadataColumnId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA_PROCESO]"
+                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA_PROCESO]" />
+                    <inputColumn
+                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].Columns[HORA_PROCESO]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="HORA_PROCESO"
+                      externalMetadataColumnId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[HORA_PROCESO]"
+                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[HORA_PROCESO]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA]"
+                      dataType="wstr"
+                      length="4000"
+                      name="FECHA" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[REFERENCIA]"
+                      dataType="i8"
+                      name="REFERENCIA" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MATERIAL]"
+                      dataType="wstr"
+                      length="15"
+                      name="MATERIAL" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CENTRO]"
+                      dataType="wstr"
+                      length="4"
+                      name="CENTRO" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ALMACEN]"
+                      codePage="65001"
+                      dataType="str"
+                      length="4"
+                      name="ALMACEN" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MOVIMIENTO]"
+                      dataType="numeric"
+                      name="MOVIMIENTO"
+                      precision="11" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CANTIDAD]"
+                      dataType="numeric"
+                      name="CANTIDAD"
+                      precision="38"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA_PROCESO]"
+                      dataType="wstr"
+                      length="4000"
+                      name="FECHA_PROCESO" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[HORA_PROCESO]"
+                      dataType="wstr"
+                      length="4000"
+                      name="HORA_PROCESO" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\MOV_201_202 local\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">exec INTERFAZ_ABM_MODELOS_FENIX 'semanal'</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\MOV_201_202 local\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="{6F629885-837D-457B-80EC-A9CB987F09E3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[fe-sql02.WEBAPP.pbi_webapp_ro 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA]"
+                      length="4000"
+                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA]"
+                      name="FECHA"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[REFERENCIA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[REFERENCIA]"
+                      length="10"
+                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[REFERENCIA]"
+                      name="REFERENCIA"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[MATERIAL]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MATERIAL]"
+                      length="15"
+                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[MATERIAL]"
+                      name="MATERIAL"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[CENTRO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CENTRO]"
+                      length="4"
+                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[CENTRO]"
+                      name="CENTRO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[ALMACEN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ALMACEN]"
+                      length="50"
+                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[ALMACEN]"
+                      name="ALMACEN"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[MOVIMIENTO]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MOVIMIENTO]"
+                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[MOVIMIENTO]"
+                      name="MOVIMIENTO"
+                      precision="11"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[CANTIDAD]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CANTIDAD]"
+                      length="50"
+                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[CANTIDAD]"
+                      name="CANTIDAD"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA_PROCESO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA_PROCESO]"
+                      length="4000"
+                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA_PROCESO]"
+                      name="FECHA_PROCESO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[HORA_PROCESO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[HORA_PROCESO]"
+                      length="4000"
+                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[HORA_PROCESO]"
+                      name="HORA_PROCESO"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA]"
+                      dataType="wstr"
+                      length="4000"
+                      name="FECHA" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[REFERENCIA]"
+                      dataType="wstr"
+                      length="10"
+                      name="REFERENCIA" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MATERIAL]"
+                      dataType="wstr"
+                      length="15"
+                      name="MATERIAL" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CENTRO]"
+                      dataType="wstr"
+                      length="4"
+                      name="CENTRO" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ALMACEN]"
+                      dataType="wstr"
+                      length="50"
+                      name="ALMACEN" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MOVIMIENTO]"
+                      dataType="numeric"
+                      name="MOVIMIENTO"
+                      precision="11" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CANTIDAD]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA_PROCESO]"
+                      dataType="wstr"
+                      length="4000"
+                      name="FECHA_PROCESO" />
+                    <externalMetadataColumn
+                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[HORA_PROCESO]"
+                      dataType="wstr"
+                      length="4000"
+                      name="HORA_PROCESO" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA]"
+                      dataType="wstr"
+                      length="4000"
+                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA]"
+                      name="FECHA" />
+                    <outputColumn
+                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[REFERENCIA]"
+                      dataType="wstr"
+                      length="10"
+                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[REFERENCIA]"
+                      name="REFERENCIA" />
+                    <outputColumn
+                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MATERIAL]"
+                      dataType="wstr"
+                      length="15"
+                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MATERIAL]"
+                      name="MATERIAL" />
+                    <outputColumn
+                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CENTRO]"
+                      dataType="wstr"
+                      length="4"
+                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CENTRO]"
+                      name="CENTRO" />
+                    <outputColumn
+                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ALMACEN]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ALMACEN]"
+                      name="ALMACEN" />
+                    <outputColumn
+                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MOVIMIENTO]"
+                      dataType="numeric"
+                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MOVIMIENTO]"
+                      name="MOVIMIENTO"
+                      precision="11" />
+                    <outputColumn
+                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CANTIDAD]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CANTIDAD]"
+                      name="CANTIDAD" />
+                    <outputColumn
+                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA_PROCESO]"
+                      dataType="wstr"
+                      length="4000"
+                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA_PROCESO]"
+                      name="FECHA_PROCESO" />
+                    <outputColumn
+                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[HORA_PROCESO]"
+                      dataType="wstr"
+                      length="4000"
+                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[HORA_PROCESO]"
+                      name="HORA_PROCESO" />
+                    <outputColumn
+                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\MOV_201_202 local.Paths[OLE DB Source Output]"
+              endId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{73D376FB-AB19-4BEE-9B2F-7631351CE553}"
+      DTS:From="Package\MOV_201_202"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\MOV_201_202 local" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="153,42"
+          Id="Package\MOV_201_202"
+          TopLeft="364,119" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\MOV_201_202 local"
+          TopLeft="364,221" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="440.5,161">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="13,60"
+              Start="0,0"
+              End="13,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26"
+                    Point2="0,30"
+                    Point3="4,30" />
+                  <mssgle:LineSegment
+                    End="9,30" />
+                  <mssgle:CubicBezierSegment
+                    Point1="9,30"
+                    Point2="13,30"
+                    Point3="13,34" />
+                  <mssgle:LineSegment
+                    End="13,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\MOV_201_202">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\MOV_201_202\OLE DB Source"
+          TopLeft="209,112" />
+        <NodeLayout
+          Size="176,42"
+          Id="Package\MOV_201_202\Flat File Destination"
+          TopLeft="489,149" />
+        <EdgeLayout
+          Id="Package\MOV_201_202.Paths[OLE DB Source Output]"
+          TopLeft="366,133">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="123,37"
+              Start="0,0"
+              End="115.5,37">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="57.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="57.5,0"
+                    Point2="61.5,0"
+                    Point3="61.5,4" />
+                  <mssgle:LineSegment
+                    End="61.5,33" />
+                  <mssgle:CubicBezierSegment
+                    Point1="61.5,33"
+                    Point2="61.5,37"
+                    Point3="65.5,37" />
+                  <mssgle:LineSegment
+                    End="115.5,37" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\MOV_201_202\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\MOV_201_202 local">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\MOV_201_202 local\OLE DB Source"
+          TopLeft="209,112" />
+        <NodeLayout
+          Size="176,42"
+          Id="Package\MOV_201_202 local\Flat File Destination"
+          TopLeft="489,149" />
+        <EdgeLayout
+          Id="Package\MOV_201_202 local.Paths[OLE DB Source Output]"
+          TopLeft="366,133">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="123,37"
+              Start="0,0"
+              End="115.5,37">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="57.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="57.5,0"
+                    Point2="61.5,0"
+                    Point3="61.5,4" />
+                  <mssgle:LineSegment
+                    End="61.5,33" />
+                  <mssgle:CubicBezierSegment
+                    Point1="61.5,33"
+                    Point2="61.5,37"
+                    Point3="65.5,37" />
+                  <mssgle:LineSegment
+                    End="115.5,37" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

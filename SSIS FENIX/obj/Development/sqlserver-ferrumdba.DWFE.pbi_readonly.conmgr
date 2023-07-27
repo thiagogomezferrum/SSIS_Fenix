@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="sqlserver-ferrumdba.DWFE.pbi_readonly"
+  DTS:DTSID="{06BE70C1-CEEC-4B56-8F8B-1D0ADCF12D6C}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=sqlserver-ferrumdba;User ID=pbi_readonly;Initial Catalog=DWFE;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA8Ijh0iqc50mn1NpxovuswQAAAAACAAAAAAADZgAAwAAAABAAAADcgty+W+X73D08KibaonxVAAAAAASAAACgAAAAEAAAAIxaGX7oX/+S8Uq8yC74lsx4AAAAJd1+nbQmliLvD4rRMx6a4pAN/KkRzFvJLtmmAc1JehpCcXBhi4sT017v46IoBUwcsGCeYlHqXZyddvGvHalmBO4w51xKE8S072f2t+AH1j3bsd3zJ8Hn/QegWenMZnZuGUtpIDaSj+uOxd4cNP81aa/f3XPB+tgRFAAAAMkuXBLd8SMBO/r/rTQsL33P+cp0</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

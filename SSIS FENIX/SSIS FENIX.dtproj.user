@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataTransformationsUserConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <AssessmentRuleSuppressionSetting />
+        <UseWinAuth>false</UseWinAuth>
+        <WinAuthUserName />
+        <WinAuthDomain />
+        <ServerName>fe-sql02</ServerName>
+        <PathOnServer>/SSISDB/FENIX_INTERFACES/SSIS FENIX</PathOnServer>
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>{6F629885-837D-457B-80EC-A9CB987F09E3}</Id>
+            <Name>{6F629885-837D-457B-80EC-A9CB987F09E3}</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAFFoUHbCIf02Us9hQehV+sgAAAABOAAAAewA2AEYANgAyADkAOAA4ADUALQA4ADMANwBEAC0ANAA1ADcAQgAtADgAMABFAEMALQBBADkAQwBCADkAOAA3AEYAMAA5AEUAMwB9AAAAA2YAAMAAAAAQAAAAuN9Yv5DGZrryghkwHxjiEQAAAAAEgAAAoAAAABAAAADooVUYUE/GhBys1ufjxaibEAAAABt5ZZpWEzrx2WTiG4BdAkkUAAAAWLyItLmLW4gePyqd2qXRZAwQWPU=</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>{D097C6A4-C776-4F17-9E1D-26DD04966E6F}</Id>
+            <Name>{D097C6A4-C776-4F17-9E1D-26DD04966E6F}</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAFFoUHbCIf02Us9hQehV+sgAAAABOAAAAewBEADAAOQA3AEMANgBBADQALQBDADcANwA2AC0ANABGADEANwAtADkARQAxAEQALQAyADYARABEADAANAA5ADYANgBFADYARgB9AAAAA2YAAMAAAAAQAAAAWKi+oEmPqk6B9pwmCH/WagAAAAAEgAAAoAAAABAAAAC38roRUqwjnQZ0i1AtDtV+EAAAAKeTaxLoiGHXq3KB6y/JVa8UAAAALhZB11O5xFTDnxVovA/7XGo1tcw=</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>{6F629885-837D-457B-80EC-A9CB987F09E3}</Id>
+            <Name>{6F629885-837D-457B-80EC-A9CB987F09E3}</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAFFoUHbCIf02Us9hQehV+sgAAAABOAAAAewA2AEYANgAyADkAOAA4ADUALQA4ADMANwBEAC0ANAA1ADcAQgAtADgAMABFAEMALQBBADkAQwBCADkAOAA3AEYAMAA5AEUAMwB9AAAAA2YAAMAAAAAQAAAAFk0srXx+MvLf/NUTWQ9oqQAAAAAEgAAAoAAAABAAAADzwPVbXMgKtT57kBdfvwm0GAAAAGyWmWQQdVQXYDljUiKqWXJZHNai289lTRQAAACrcZt4wXvCGtIAMgiDhIXEJo6x1g==</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>{D097C6A4-C776-4F17-9E1D-26DD04966E6F}</Id>
+            <Name>{D097C6A4-C776-4F17-9E1D-26DD04966E6F}</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAFFoUHbCIf02Us9hQehV+sgAAAABOAAAAewBEADAAOQA3AEMANgBBADQALQBDADcANwA2AC0ANABGADEANwAtADkARQAxAEQALQAyADYARABEADAANAA5ADYANgBFADYARgB9AAAAA2YAAMAAAAAQAAAAyoGlad0SmlQ+0PkFqPH+dwAAAAAEgAAAoAAAABAAAABbZSdY3zzvHGf0Z2jnbLyzGAAAALeWplnLT88L9+8eeXiRuJrRl2/KNoA+YxQAAADsz9JNIb8u/zrLdvzkf2y8VboQOw==</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <OfflineMode>false</OfflineMode>
+        <ProgressReporting>true</ProgressReporting>
+        <ParameterConfigurationSensitiveValues>
+          <ConfigurationSetting>
+            <Id>LastModifiedTime</Id>
+            <Name>LastModifiedTime</Name>
+            <Value xsi:type="xsd:dateTime">2021-09-29T12:50:09.2700347Z</Value>
+          </ConfigurationSetting>
+        </ParameterConfigurationSensitiveValues>
+      </Options>
+    </Configuration>
+  </Configurations>
+</DataTransformationsUserConfiguration>

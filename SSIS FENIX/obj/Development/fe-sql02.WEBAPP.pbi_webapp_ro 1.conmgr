@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="fe-sql02.WEBAPP.pbi_webapp_ro 1"
+  DTS:DTSID="{6F629885-837D-457B-80EC-A9CB987F09E3}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=fe-sql02;User ID=pconnon;Initial Catalog=WEBAPP;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA8Ijh0iqc50mn1NpxovuswQAAAAACAAAAAAADZgAAwAAAABAAAABYN/z3QDvlnnhpGbH4piSqAAAAAASAAACgAAAAEAAAAMU67pqqAt+5BfBqBEgnoWx4AAAA+BYBnCvUz5RHKU8aKUAusC9zOYAe6qcYvqZe/xdx/h++rid3gSAMgfU/+Z/e+V/3NtwrZjDAKgCF8A0GFJxo2IhhdR7ojBk++w5rgFQ5JUG64A56AqkEN8b+2dhNsPMYQezp3YTuEQ1Rd0ZthFSvTT1uKGKg2gYmFAAAAHAer1z7xKMFKtJttwMt4SzDBieg</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

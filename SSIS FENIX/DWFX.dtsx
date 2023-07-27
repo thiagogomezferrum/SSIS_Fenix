@@ -1,0 +1,1518 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="2/23/2022 8:37:11 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="FE-PCONNON"
+  DTS:CreatorName="NTFERRUM\pconnon"
+  DTS:DTSID="{9208ADBB-E740-44C0-9C8F-7696F202FBE2}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5035.3"
+  DTS:LocaleID="11274"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{1368B868-3EB3-43D3-BDBD-28D78A3B7A23}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[BOM]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{CBD13408-B2B5-48CC-9130-BBB7A550D0E7}"
+      DTS:ObjectName="BOM">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="11274"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="\\linuxfil\DW\PRD\APROCESAR\pp_bom.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CODIGO MATERIAL"
+              DTS:DTSID="{4B8501DD-C2B9-4FB0-8052-BDBE0EBF3CD7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CENTRO"
+              DTS:DTSID="{97B242A0-4870-4C7B-88CE-ADEC159A4BB7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ALTERNATIVA"
+              DTS:DTSID="{86AF6240-4C2F-4FD9-B10E-5B9EE0CEEA67}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="POSICION"
+              DTS:DTSID="{DBE0B9DD-25DA-4620-BFC2-20B1A826B36E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CANTIDAD BASE"
+              DTS:DTSID="{EE379F27-03F7-4B79-B7E5-99702265F0CA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="COMPONENTE"
+              DTS:DTSID="{5D1DBB91-6B0B-4E5A-9E09-298CE4F253C2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CANTIDAD COMPONENTE"
+              DTS:DTSID="{BE059269-244F-4B6E-8B0C-9C47399C4DF3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UM COMPONENTE"
+              DTS:DTSID="{6A837D14-F655-44D1-8F07-FF834B5F3741}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{67564C78-FD3F-4237-A5D1-D541443BF5A2}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="11274"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[BOM]"
+                  connectionManagerRefId="Package.ConnectionManagers[BOM]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO MATERIAL]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CODIGO MATERIAL]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO MATERIAL]"
+                      name="CODIGO MATERIAL"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CENTRO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CENTRO]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CENTRO]"
+                      name="CENTRO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ALTERNATIVA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ALTERNATIVA]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ALTERNATIVA]"
+                      name="ALTERNATIVA"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[POSICION]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[POSICION]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[POSICION]"
+                      name="POSICION"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD BASE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CANTIDAD BASE]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD BASE]"
+                      name="CANTIDAD BASE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[COMPONENTE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[COMPONENTE]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[COMPONENTE]"
+                      name="COMPONENTE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD COMPONENTE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CANTIDAD COMPONENTE]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD COMPONENTE]"
+                      name="CANTIDAD COMPONENTE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[UM COMPONENTE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UM COMPONENTE]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[UM COMPONENTE]"
+                      name="UM COMPONENTE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CODIGO MATERIAL]"
+                      dataType="wstr"
+                      length="50"
+                      name="CODIGO MATERIAL" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CENTRO]"
+                      dataType="wstr"
+                      length="50"
+                      name="CENTRO" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ALTERNATIVA]"
+                      dataType="wstr"
+                      length="50"
+                      name="ALTERNATIVA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[POSICION]"
+                      dataType="wstr"
+                      length="50"
+                      name="POSICION" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CANTIDAD BASE]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD BASE" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[COMPONENTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="COMPONENTE" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CANTIDAD COMPONENTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD COMPONENTE" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UM COMPONENTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="UM COMPONENTE" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\materiales"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="materiales"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select	CODIGO_DE_MATERIAL, 
+		DENOMINACION,
+		TIPO_MATERIAL, 
+		MATERIAL_ANTERIOR, 
+		JERARQUIA, 
+		j1_descripcion, 
+		j2_descripcion, 
+		j3_descripcion, 
+		grupo_mat_1_descr, 
+		grupo_mat_2_descr, 
+		grupo_mat_3_descr, 
+		PESO_BRUTO, 
+		UNIDAD_PESO, 
+		EAN, 
+		ESTADO_MATERIAL
+from MATERIALES</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\materiales.Connections[OleDbConnection]"
+                  connectionManagerID="{6523C765-3D82-486C-805A-52576831529F}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[sqlserver-ferrumdba.DWFE.pbi_ferrum]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[CODIGO_DE_MATERIAL]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[CODIGO_DE_MATERIAL]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[CODIGO_DE_MATERIAL]"
+                      name="CODIGO_DE_MATERIAL"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[DENOMINACION]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[DENOMINACION]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[DENOMINACION]"
+                      name="DENOMINACION"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[TIPO_MATERIAL]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[TIPO_MATERIAL]"
+                      length="10"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[TIPO_MATERIAL]"
+                      name="TIPO_MATERIAL"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[MATERIAL_ANTERIOR]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[MATERIAL_ANTERIOR]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[MATERIAL_ANTERIOR]"
+                      name="MATERIAL_ANTERIOR"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[JERARQUIA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[JERARQUIA]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[JERARQUIA]"
+                      name="JERARQUIA"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[j1_descripcion]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[j1_descripcion]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[j1_descripcion]"
+                      name="j1_descripcion"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[j2_descripcion]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[j2_descripcion]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[j2_descripcion]"
+                      name="j2_descripcion"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[j3_descripcion]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[j3_descripcion]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[j3_descripcion]"
+                      name="j3_descripcion"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[grupo_mat_1_descr]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[grupo_mat_1_descr]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[grupo_mat_1_descr]"
+                      name="grupo_mat_1_descr"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[grupo_mat_2_descr]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[grupo_mat_2_descr]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[grupo_mat_2_descr]"
+                      name="grupo_mat_2_descr"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[grupo_mat_3_descr]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[grupo_mat_3_descr]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[grupo_mat_3_descr]"
+                      name="grupo_mat_3_descr"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[PESO_BRUTO]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[PESO_BRUTO]"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[PESO_BRUTO]"
+                      name="PESO_BRUTO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[UNIDAD_PESO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[UNIDAD_PESO]"
+                      length="10"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[UNIDAD_PESO]"
+                      name="UNIDAD_PESO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[EAN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[EAN]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[EAN]"
+                      name="EAN"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[ESTADO_MATERIAL]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[ESTADO_MATERIAL]"
+                      length="24"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[ESTADO_MATERIAL]"
+                      name="ESTADO_MATERIAL"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[CODIGO_DE_MATERIAL]"
+                      dataType="wstr"
+                      length="50"
+                      name="CODIGO_DE_MATERIAL" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[DENOMINACION]"
+                      dataType="wstr"
+                      length="50"
+                      name="DENOMINACION" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[TIPO_MATERIAL]"
+                      dataType="wstr"
+                      length="10"
+                      name="TIPO_MATERIAL" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[MATERIAL_ANTERIOR]"
+                      dataType="wstr"
+                      length="50"
+                      name="MATERIAL_ANTERIOR" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[JERARQUIA]"
+                      dataType="wstr"
+                      length="50"
+                      name="JERARQUIA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[j1_descripcion]"
+                      dataType="wstr"
+                      length="50"
+                      name="j1_descripcion" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[j2_descripcion]"
+                      dataType="wstr"
+                      length="50"
+                      name="j2_descripcion" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[j3_descripcion]"
+                      dataType="wstr"
+                      length="50"
+                      name="j3_descripcion" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[grupo_mat_1_descr]"
+                      dataType="wstr"
+                      length="50"
+                      name="grupo_mat_1_descr" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[grupo_mat_2_descr]"
+                      dataType="wstr"
+                      length="50"
+                      name="grupo_mat_2_descr" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[grupo_mat_3_descr]"
+                      dataType="wstr"
+                      length="50"
+                      name="grupo_mat_3_descr" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[PESO_BRUTO]"
+                      dataType="r8"
+                      name="PESO_BRUTO" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[UNIDAD_PESO]"
+                      dataType="wstr"
+                      length="10"
+                      name="UNIDAD_PESO" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[EAN]"
+                      dataType="wstr"
+                      length="50"
+                      name="EAN" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[ESTADO_MATERIAL]"
+                      dataType="wstr"
+                      length="24"
+                      name="ESTADO_MATERIAL" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[CODIGO_DE_MATERIAL]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[CODIGO_DE_MATERIAL]"
+                      name="CODIGO_DE_MATERIAL" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[DENOMINACION]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[DENOMINACION]"
+                      name="DENOMINACION" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[TIPO_MATERIAL]"
+                      dataType="wstr"
+                      length="10"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[TIPO_MATERIAL]"
+                      name="TIPO_MATERIAL" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[MATERIAL_ANTERIOR]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[MATERIAL_ANTERIOR]"
+                      name="MATERIAL_ANTERIOR" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[JERARQUIA]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[JERARQUIA]"
+                      name="JERARQUIA" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[j1_descripcion]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[j1_descripcion]"
+                      name="j1_descripcion" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[j2_descripcion]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[j2_descripcion]"
+                      name="j2_descripcion" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[j3_descripcion]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[j3_descripcion]"
+                      name="j3_descripcion" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[grupo_mat_1_descr]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[grupo_mat_1_descr]"
+                      name="grupo_mat_1_descr" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[grupo_mat_2_descr]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[grupo_mat_2_descr]"
+                      name="grupo_mat_2_descr" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[grupo_mat_3_descr]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[grupo_mat_3_descr]"
+                      name="grupo_mat_3_descr" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[PESO_BRUTO]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[PESO_BRUTO]"
+                      name="PESO_BRUTO" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[UNIDAD_PESO]"
+                      dataType="wstr"
+                      length="10"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[UNIDAD_PESO]"
+                      name="UNIDAD_PESO" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[EAN]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[EAN]"
+                      name="EAN" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[ESTADO_MATERIAL]"
+                      dataType="wstr"
+                      length="24"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[ESTADO_MATERIAL]"
+                      name="ESTADO_MATERIAL" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[BOM]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{D097C6A4-C776-4F17-9E1D-26DD04966E6F}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[fe-sql02.STA.pconnon]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CENTRO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CENTRO"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CENTRO]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CENTRO]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ALTERNATIVA]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ALTERNATIVA"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ALTERNATIVA]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ALTERNATIVA]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[POSICION]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="POSICION"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[POSICION]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[POSICION]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[COMPONENTE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="COMPONENTE"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COMPONENTE]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[COMPONENTE]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CODIGO MATERIAL]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CODIGO MATERIAL"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO_MATERIAL]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO MATERIAL]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CANTIDAD BASE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CANTIDAD BASE"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD_BASE]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD BASE]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CANTIDAD COMPONENTE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CANTIDAD COMPONENTE"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD_COMPONENTE]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD COMPONENTE]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[UM COMPONENTE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="UM COMPONENTE"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UM_COMPONENTE]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[UM COMPONENTE]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO_MATERIAL]"
+                      dataType="wstr"
+                      length="50"
+                      name="CODIGO_MATERIAL" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CENTRO]"
+                      dataType="wstr"
+                      length="50"
+                      name="CENTRO" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ALTERNATIVA]"
+                      dataType="wstr"
+                      length="50"
+                      name="ALTERNATIVA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[POSICION]"
+                      dataType="wstr"
+                      length="50"
+                      name="POSICION" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD_BASE]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD_BASE" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COMPONENTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="COMPONENTE" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD_COMPONENTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD_COMPONENTE" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UM_COMPONENTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="UM_COMPONENTE" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHALOG]"
+                      dataType="dbTimeStamp"
+                      name="FECHALOG" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\OLE DB Destination 1"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination 1"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[MATERIALES]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\OLE DB Destination 1.Connections[OleDbConnection]"
+                  connectionManagerID="{D097C6A4-C776-4F17-9E1D-26DD04966E6F}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[fe-sql02.STA.pconnon]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[CODIGO_DE_MATERIAL]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CODIGO_DE_MATERIAL"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO_DE_MATERIAL]"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[CODIGO_DE_MATERIAL]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DENOMINACION]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="DENOMINACION"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DENOMINACION]"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[DENOMINACION]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[TIPO_MATERIAL]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="TIPO_MATERIAL"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TIPO_MATERIAL]"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[TIPO_MATERIAL]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[MATERIAL_ANTERIOR]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="MATERIAL_ANTERIOR"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MATERIAL_ANTERIOR]"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[MATERIAL_ANTERIOR]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[JERARQUIA]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="JERARQUIA"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[JERARQUIA]"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[JERARQUIA]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[j1_descripcion]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="j1_descripcion"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[J1_DESCRIPCION]"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[j1_descripcion]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[j2_descripcion]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="j2_descripcion"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[J2_DESCRIPCION]"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[j2_descripcion]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[j3_descripcion]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="j3_descripcion"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[J3_DESCRIPCION]"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[j3_descripcion]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[grupo_mat_1_descr]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="grupo_mat_1_descr"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[GRUPO_MAT_1_DESCR]"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[grupo_mat_1_descr]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[grupo_mat_2_descr]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="grupo_mat_2_descr"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[GRUPO_MAT_2_DESCR]"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[grupo_mat_2_descr]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[grupo_mat_3_descr]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="grupo_mat_3_descr"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[GRUPO_MAT_3_DESCR]"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[grupo_mat_3_descr]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[PESO_BRUTO]"
+                      cachedDataType="r8"
+                      cachedName="PESO_BRUTO"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[PESO_BRUTO]"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[PESO_BRUTO]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[UNIDAD_PESO]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="UNIDAD_PESO"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[UNIDAD_PESO]"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[UNIDAD_PESO]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[EAN]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="EAN"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[EAN]"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[EAN]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ESTADO_MATERIAL]"
+                      cachedDataType="wstr"
+                      cachedLength="24"
+                      cachedName="ESTADO_MATERIAL"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ESTADO_MATERIAL]"
+                      lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].Columns[ESTADO_MATERIAL]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO_DE_MATERIAL]"
+                      dataType="wstr"
+                      length="50"
+                      name="CODIGO_DE_MATERIAL" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DENOMINACION]"
+                      dataType="wstr"
+                      length="50"
+                      name="DENOMINACION" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TIPO_MATERIAL]"
+                      dataType="wstr"
+                      length="10"
+                      name="TIPO_MATERIAL" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MATERIAL_ANTERIOR]"
+                      dataType="wstr"
+                      length="50"
+                      name="MATERIAL_ANTERIOR" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[JERARQUIA]"
+                      dataType="wstr"
+                      length="50"
+                      name="JERARQUIA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[J1_DESCRIPCION]"
+                      dataType="wstr"
+                      length="50"
+                      name="J1_DESCRIPCION" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[J2_DESCRIPCION]"
+                      dataType="wstr"
+                      length="50"
+                      name="J2_DESCRIPCION" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[J3_DESCRIPCION]"
+                      dataType="wstr"
+                      length="50"
+                      name="J3_DESCRIPCION" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[GRUPO_MAT_1_DESCR]"
+                      dataType="wstr"
+                      length="50"
+                      name="GRUPO_MAT_1_DESCR" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[GRUPO_MAT_2_DESCR]"
+                      dataType="wstr"
+                      length="50"
+                      name="GRUPO_MAT_2_DESCR" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[GRUPO_MAT_3_DESCR]"
+                      dataType="wstr"
+                      length="50"
+                      name="GRUPO_MAT_3_DESCR" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[PESO_BRUTO]"
+                      dataType="r8"
+                      name="PESO_BRUTO" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[UNIDAD_PESO]"
+                      dataType="wstr"
+                      length="10"
+                      name="UNIDAD_PESO" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[EAN]"
+                      dataType="wstr"
+                      length="50"
+                      name="EAN" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ESTADO_MATERIAL]"
+                      dataType="wstr"
+                      length="50"
+                      name="ESTADO_MATERIAL" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
+                      dataType="dbTimeStamp"
+                      name="fecha" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\OLE DB Destination 1.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[Flat File Source Output]"
+              endId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[OLE DB Source Output]"
+              endId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{F15D5907-475B-4EBD-9BBE-C5B93D316AA7}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{D097C6A4-C776-4F17-9E1D-26DD04966E6F}"
+          SQLTask:SqlStatementSource="truncate table sta.dbo.bom&#xA;truncate table sta.dbo.materiales" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{785B6CFE-637B-4F3A-9836-DC7DC572F45C}"
+      DTS:From="Package\Execute SQL Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Data Flow Task" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Data Flow Task"
+          TopLeft="388.5,65.5" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Execute SQL Task"
+          TopLeft="120,21" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="290,42">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="98.5,44.5"
+              Start="0,0"
+              End="91,44.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="45.25,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="45.25,0"
+                    Point2="49.25,0"
+                    Point3="49.25,4" />
+                  <mssgle:LineSegment
+                    End="49.25,40.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="49.25,40.5"
+                    Point2="49.25,44.5"
+                    Point3="53.25,44.5" />
+                  <mssgle:LineSegment
+                    End="91,44.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Data Flow Task\OLE DB Destination"
+          TopLeft="370,82" />
+        <NodeLayout
+          Size="186,42"
+          Id="Package\Data Flow Task\OLE DB Destination 1"
+          TopLeft="375,172" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Data Flow Task\Flat File Source"
+          TopLeft="91,84" />
+        <NodeLayout
+          Size="130,42"
+          Id="Package\Data Flow Task\materiales"
+          TopLeft="84,182" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
+          TopLeft="214,203">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="161,-10"
+              Start="0,0"
+              End="153.5,-10">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="76.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="76.5,0"
+                    Point2="80.5,0"
+                    Point3="80.5,-4" />
+                  <mssgle:LineSegment
+                    End="80.5,-6" />
+                  <mssgle:CubicBezierSegment
+                    Point1="80.5,-6"
+                    Point2="80.5,-10"
+                    Point3="84.5,-10" />
+                  <mssgle:LineSegment
+                    End="153.5,-10" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Flat File Source Output]"
+          TopLeft="247,104">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="123,0"
+              Start="0,0"
+              End="115.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="115.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\OLE DB Destination 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\materiales">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
