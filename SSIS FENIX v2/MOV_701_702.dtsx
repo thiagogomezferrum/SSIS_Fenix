@@ -1,0 +1,1300 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="9/29/2021 8:24:09 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="FE-PCONNON"
+  DTS:CreatorName="NTFERRUM\pconnon"
+  DTS:DTSID="{9262B228-D776-41EC-8A60-FCE6EDA660DD}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.167"
+  DTS:LocaleID="11274"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:ProtectionLevel="1"
+  DTS:VersionBuild="35"
+  DTS:VersionGUID="{86899EAE-FD0F-4280-904E-CB1FA0B347BD}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[abm_inventario_fenix.csv]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{03835306-11A9-4059-BFBD-8395C405E338}"
+      DTS:ObjectName="abm_inventario_fenix.csv">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="11274"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="\\linuxfil.ntferrum.local\sap-interfaces\PRD\Z19957\MOV_701_702\APROCESAR\abm_inventario_fenix.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CENTRO"
+              DTS:DTSID="{AA03C2AB-BE28-4215-A6D5-F7CD674C6998}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ALMACEN"
+              DTS:DTSID="{AA026631-DA8D-4B76-85CB-57B7E44060FF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="REFERENCIA"
+              DTS:DTSID="{FD06C062-1D68-4C7F-A477-B38218E74669}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA_DE_DOCUMENTO"
+              DTS:DTSID="{AEDCACC0-A0F2-4922-827B-8C217F67DFEE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MATERIAL"
+              DTS:DTSID="{2AEB5C2E-4BCC-4304-8FC0-D0E09445D4FE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MOVIMIENTO_SAP"
+              DTS:DTSID="{8890B7A3-40A9-45B6-8DAC-B83AFD3BF407}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CANTIDAD"
+              DTS:DTSID="{0363132D-F29D-4D14-925D-6E6893DBE308}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA_PROCESO"
+              DTS:DTSID="{7C0B0F8D-30CE-4ED8-844B-52676CFF4B75}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HORA_PROCESO"
+              DTS:DTSID="{3BE05550-D070-4D4C-8846-A1E893047C04}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[abm_inventario_fenix.csv 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{fddd38ef-3cd9-450e-acd2-3ac12354cc71}"
+      DTS:ObjectName="abm_inventario_fenix.csv 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="11274"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\temp\abm_inventario_fenix.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CENTRO"
+              DTS:DTSID="{08239864-608D-41E6-98A0-F5E44E99959E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ALMACEN"
+              DTS:DTSID="{0044430E-B869-4ECB-BCE8-2992081BD7BE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="REFERENCIA"
+              DTS:DTSID="{FB664835-429A-4C83-AB3A-3C8FA7BFBAB2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA_DE_DOCUMENTO"
+              DTS:DTSID="{4C8DD051-CE92-47DF-B09F-199E96A65785}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MATERIAL"
+              DTS:DTSID="{07BD06FC-23E6-4709-8922-968811193758}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MOVIMIENTO_SAP"
+              DTS:DTSID="{04432EF1-F316-4C18-82C5-06DA8D205326}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CANTIDAD"
+              DTS:DTSID="{C11BA07E-28F3-4B3C-8B4C-BEE38FFCCBF6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA_PROCESO"
+              DTS:DTSID="{04C29433-B786-4624-B60A-B3198A236185}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HORA_PROCESO"
+              DTS:DTSID="{F50B2439-4192-47C6-AE4F-7F4B097C8324}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\701_702"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{AD50DF0F-4185-4321-9D37-E427BC782869}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="701_702"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\701_702\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="11274"
+              name="Flat File Destination"
+              validateExternalMetadata="False">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\701_702\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[abm_inventario_fenix.csv]"
+                  connectionManagerRefId="Package.ConnectionManagers[abm_inventario_fenix.csv]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\701_702\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\701_702\Flat File Destination.Inputs[Flat File Destination Input].Columns[CENTRO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CENTRO"
+                      externalMetadataColumnId="Package\701_702\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CENTRO]"
+                      lineageId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].Columns[CENTRO]" />
+                    <inputColumn
+                      refId="Package\701_702\Flat File Destination.Inputs[Flat File Destination Input].Columns[ALMACEN]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ALMACEN"
+                      externalMetadataColumnId="Package\701_702\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ALMACEN]"
+                      lineageId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].Columns[ALMACEN]" />
+                    <inputColumn
+                      refId="Package\701_702\Flat File Destination.Inputs[Flat File Destination Input].Columns[REFERENCIA]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="REFERENCIA"
+                      externalMetadataColumnId="Package\701_702\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[REFERENCIA]"
+                      lineageId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].Columns[REFERENCIA]" />
+                    <inputColumn
+                      refId="Package\701_702\Flat File Destination.Inputs[Flat File Destination Input].Columns[FECHA_DE_DOCUMENTO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="FECHA_DE_DOCUMENTO"
+                      externalMetadataColumnId="Package\701_702\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA_DE_DOCUMENTO]"
+                      lineageId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA_DE_DOCUMENTO]" />
+                    <inputColumn
+                      refId="Package\701_702\Flat File Destination.Inputs[Flat File Destination Input].Columns[MATERIAL]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="MATERIAL"
+                      externalMetadataColumnId="Package\701_702\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MATERIAL]"
+                      lineageId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].Columns[MATERIAL]" />
+                    <inputColumn
+                      refId="Package\701_702\Flat File Destination.Inputs[Flat File Destination Input].Columns[MOVIMIENTO_SAP]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="MOVIMIENTO_SAP"
+                      externalMetadataColumnId="Package\701_702\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MOVIMIENTO_SAP]"
+                      lineageId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].Columns[MOVIMIENTO_SAP]" />
+                    <inputColumn
+                      refId="Package\701_702\Flat File Destination.Inputs[Flat File Destination Input].Columns[CANTIDAD]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CANTIDAD"
+                      externalMetadataColumnId="Package\701_702\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CANTIDAD]"
+                      lineageId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].Columns[CANTIDAD]" />
+                    <inputColumn
+                      refId="Package\701_702\Flat File Destination.Inputs[Flat File Destination Input].Columns[FECHA_PROCESO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="FECHA_PROCESO"
+                      externalMetadataColumnId="Package\701_702\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA_PROCESO]"
+                      lineageId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA_PROCESO]" />
+                    <inputColumn
+                      refId="Package\701_702\Flat File Destination.Inputs[Flat File Destination Input].Columns[HORA_PROCESO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="HORA_PROCESO"
+                      externalMetadataColumnId="Package\701_702\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[HORA_PROCESO]"
+                      lineageId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].Columns[HORA_PROCESO]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\701_702\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CENTRO]"
+                      dataType="wstr"
+                      length="50"
+                      name="CENTRO" />
+                    <externalMetadataColumn
+                      refId="Package\701_702\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ALMACEN]"
+                      dataType="wstr"
+                      length="50"
+                      name="ALMACEN" />
+                    <externalMetadataColumn
+                      refId="Package\701_702\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[REFERENCIA]"
+                      dataType="wstr"
+                      length="50"
+                      name="REFERENCIA" />
+                    <externalMetadataColumn
+                      refId="Package\701_702\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA_DE_DOCUMENTO]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA_DE_DOCUMENTO" />
+                    <externalMetadataColumn
+                      refId="Package\701_702\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MATERIAL]"
+                      dataType="wstr"
+                      length="50"
+                      name="MATERIAL" />
+                    <externalMetadataColumn
+                      refId="Package\701_702\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MOVIMIENTO_SAP]"
+                      dataType="wstr"
+                      length="50"
+                      name="MOVIMIENTO_SAP" />
+                    <externalMetadataColumn
+                      refId="Package\701_702\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CANTIDAD]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD" />
+                    <externalMetadataColumn
+                      refId="Package\701_702\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA_PROCESO]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA_PROCESO" />
+                    <externalMetadataColumn
+                      refId="Package\701_702\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[HORA_PROCESO]"
+                      dataType="wstr"
+                      length="50"
+                      name="HORA_PROCESO" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\701_702\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">exec [INTERFAZ_ABM_INVENTARIO_FENIX] 'semanal'</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\701_702\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="{6F629885-837D-457B-80EC-A9CB987F09E3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[fe-sql02.WEBAPP.pbi_webapp_ro 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].Columns[CENTRO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CENTRO]"
+                      length="50"
+                      lineageId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].Columns[CENTRO]"
+                      name="CENTRO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].Columns[ALMACEN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ALMACEN]"
+                      length="50"
+                      lineageId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].Columns[ALMACEN]"
+                      name="ALMACEN"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].Columns[REFERENCIA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[REFERENCIA]"
+                      length="50"
+                      lineageId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].Columns[REFERENCIA]"
+                      name="REFERENCIA"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA_DE_DOCUMENTO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA_DE_DOCUMENTO]"
+                      length="50"
+                      lineageId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA_DE_DOCUMENTO]"
+                      name="FECHA_DE_DOCUMENTO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].Columns[MATERIAL]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MATERIAL]"
+                      length="50"
+                      lineageId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].Columns[MATERIAL]"
+                      name="MATERIAL"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].Columns[MOVIMIENTO_SAP]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MOVIMIENTO_SAP]"
+                      length="50"
+                      lineageId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].Columns[MOVIMIENTO_SAP]"
+                      name="MOVIMIENTO_SAP"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].Columns[CANTIDAD]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CANTIDAD]"
+                      length="50"
+                      lineageId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].Columns[CANTIDAD]"
+                      name="CANTIDAD"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA_PROCESO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA_PROCESO]"
+                      length="50"
+                      lineageId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA_PROCESO]"
+                      name="FECHA_PROCESO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].Columns[HORA_PROCESO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[HORA_PROCESO]"
+                      length="50"
+                      lineageId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].Columns[HORA_PROCESO]"
+                      name="HORA_PROCESO"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CENTRO]"
+                      dataType="wstr"
+                      length="50"
+                      name="CENTRO" />
+                    <externalMetadataColumn
+                      refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ALMACEN]"
+                      dataType="wstr"
+                      length="50"
+                      name="ALMACEN" />
+                    <externalMetadataColumn
+                      refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[REFERENCIA]"
+                      dataType="wstr"
+                      length="50"
+                      name="REFERENCIA" />
+                    <externalMetadataColumn
+                      refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA_DE_DOCUMENTO]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA_DE_DOCUMENTO" />
+                    <externalMetadataColumn
+                      refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MATERIAL]"
+                      dataType="wstr"
+                      length="50"
+                      name="MATERIAL" />
+                    <externalMetadataColumn
+                      refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MOVIMIENTO_SAP]"
+                      dataType="wstr"
+                      length="50"
+                      name="MOVIMIENTO_SAP" />
+                    <externalMetadataColumn
+                      refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CANTIDAD]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD" />
+                    <externalMetadataColumn
+                      refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA_PROCESO]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA_PROCESO" />
+                    <externalMetadataColumn
+                      refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[HORA_PROCESO]"
+                      dataType="wstr"
+                      length="50"
+                      name="HORA_PROCESO" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CENTRO]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CENTRO]"
+                      name="CENTRO" />
+                    <outputColumn
+                      refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ALMACEN]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ALMACEN]"
+                      name="ALMACEN" />
+                    <outputColumn
+                      refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[REFERENCIA]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[REFERENCIA]"
+                      name="REFERENCIA" />
+                    <outputColumn
+                      refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA_DE_DOCUMENTO]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA_DE_DOCUMENTO]"
+                      name="FECHA_DE_DOCUMENTO" />
+                    <outputColumn
+                      refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MATERIAL]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MATERIAL]"
+                      name="MATERIAL" />
+                    <outputColumn
+                      refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MOVIMIENTO_SAP]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MOVIMIENTO_SAP]"
+                      name="MOVIMIENTO_SAP" />
+                    <outputColumn
+                      refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CANTIDAD]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CANTIDAD]"
+                      name="CANTIDAD" />
+                    <outputColumn
+                      refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA_PROCESO]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA_PROCESO]"
+                      name="FECHA_PROCESO" />
+                    <outputColumn
+                      refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[HORA_PROCESO]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[HORA_PROCESO]"
+                      name="HORA_PROCESO" />
+                    <outputColumn
+                      refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\701_702.Paths[OLE DB Source Output]"
+              endId="Package\701_702\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\701_702\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\701_702  local"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{efc9a024-f758-434b-b348-4790100b95ed}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="701_702  local"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\701_702  local\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="11274"
+              name="Flat File Destination"
+              validateExternalMetadata="False">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\701_702  local\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[abm_inventario_fenix.csv 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[abm_inventario_fenix.csv 1]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\701_702  local\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\701_702  local\Flat File Destination.Inputs[Flat File Destination Input].Columns[CENTRO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CENTRO"
+                      externalMetadataColumnId="Package\701_702  local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CENTRO]"
+                      lineageId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].Columns[CENTRO]" />
+                    <inputColumn
+                      refId="Package\701_702  local\Flat File Destination.Inputs[Flat File Destination Input].Columns[ALMACEN]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ALMACEN"
+                      externalMetadataColumnId="Package\701_702  local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ALMACEN]"
+                      lineageId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].Columns[ALMACEN]" />
+                    <inputColumn
+                      refId="Package\701_702  local\Flat File Destination.Inputs[Flat File Destination Input].Columns[REFERENCIA]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="REFERENCIA"
+                      externalMetadataColumnId="Package\701_702  local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[REFERENCIA]"
+                      lineageId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].Columns[REFERENCIA]" />
+                    <inputColumn
+                      refId="Package\701_702  local\Flat File Destination.Inputs[Flat File Destination Input].Columns[FECHA_DE_DOCUMENTO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="FECHA_DE_DOCUMENTO"
+                      externalMetadataColumnId="Package\701_702  local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA_DE_DOCUMENTO]"
+                      lineageId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA_DE_DOCUMENTO]" />
+                    <inputColumn
+                      refId="Package\701_702  local\Flat File Destination.Inputs[Flat File Destination Input].Columns[MATERIAL]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="MATERIAL"
+                      externalMetadataColumnId="Package\701_702  local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MATERIAL]"
+                      lineageId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].Columns[MATERIAL]" />
+                    <inputColumn
+                      refId="Package\701_702  local\Flat File Destination.Inputs[Flat File Destination Input].Columns[MOVIMIENTO_SAP]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="MOVIMIENTO_SAP"
+                      externalMetadataColumnId="Package\701_702  local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MOVIMIENTO_SAP]"
+                      lineageId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].Columns[MOVIMIENTO_SAP]" />
+                    <inputColumn
+                      refId="Package\701_702  local\Flat File Destination.Inputs[Flat File Destination Input].Columns[CANTIDAD]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CANTIDAD"
+                      externalMetadataColumnId="Package\701_702  local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CANTIDAD]"
+                      lineageId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].Columns[CANTIDAD]" />
+                    <inputColumn
+                      refId="Package\701_702  local\Flat File Destination.Inputs[Flat File Destination Input].Columns[FECHA_PROCESO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="FECHA_PROCESO"
+                      externalMetadataColumnId="Package\701_702  local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA_PROCESO]"
+                      lineageId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA_PROCESO]" />
+                    <inputColumn
+                      refId="Package\701_702  local\Flat File Destination.Inputs[Flat File Destination Input].Columns[HORA_PROCESO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="HORA_PROCESO"
+                      externalMetadataColumnId="Package\701_702  local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[HORA_PROCESO]"
+                      lineageId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].Columns[HORA_PROCESO]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\701_702  local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CENTRO]"
+                      dataType="wstr"
+                      length="50"
+                      name="CENTRO" />
+                    <externalMetadataColumn
+                      refId="Package\701_702  local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ALMACEN]"
+                      dataType="wstr"
+                      length="50"
+                      name="ALMACEN" />
+                    <externalMetadataColumn
+                      refId="Package\701_702  local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[REFERENCIA]"
+                      dataType="wstr"
+                      length="50"
+                      name="REFERENCIA" />
+                    <externalMetadataColumn
+                      refId="Package\701_702  local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA_DE_DOCUMENTO]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA_DE_DOCUMENTO" />
+                    <externalMetadataColumn
+                      refId="Package\701_702  local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MATERIAL]"
+                      dataType="wstr"
+                      length="50"
+                      name="MATERIAL" />
+                    <externalMetadataColumn
+                      refId="Package\701_702  local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MOVIMIENTO_SAP]"
+                      dataType="wstr"
+                      length="50"
+                      name="MOVIMIENTO_SAP" />
+                    <externalMetadataColumn
+                      refId="Package\701_702  local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CANTIDAD]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD" />
+                    <externalMetadataColumn
+                      refId="Package\701_702  local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA_PROCESO]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA_PROCESO" />
+                    <externalMetadataColumn
+                      refId="Package\701_702  local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[HORA_PROCESO]"
+                      dataType="wstr"
+                      length="50"
+                      name="HORA_PROCESO" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\701_702  local\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">exec [INTERFAZ_ABM_INVENTARIO_FENIX] 'semanal'</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\701_702  local\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="{6F629885-837D-457B-80EC-A9CB987F09E3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[fe-sql02.WEBAPP.pbi_webapp_ro 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].Columns[CENTRO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CENTRO]"
+                      length="50"
+                      lineageId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].Columns[CENTRO]"
+                      name="CENTRO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].Columns[ALMACEN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ALMACEN]"
+                      length="50"
+                      lineageId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].Columns[ALMACEN]"
+                      name="ALMACEN"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].Columns[REFERENCIA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[REFERENCIA]"
+                      length="50"
+                      lineageId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].Columns[REFERENCIA]"
+                      name="REFERENCIA"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA_DE_DOCUMENTO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA_DE_DOCUMENTO]"
+                      length="50"
+                      lineageId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA_DE_DOCUMENTO]"
+                      name="FECHA_DE_DOCUMENTO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].Columns[MATERIAL]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MATERIAL]"
+                      length="50"
+                      lineageId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].Columns[MATERIAL]"
+                      name="MATERIAL"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].Columns[MOVIMIENTO_SAP]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MOVIMIENTO_SAP]"
+                      length="50"
+                      lineageId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].Columns[MOVIMIENTO_SAP]"
+                      name="MOVIMIENTO_SAP"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].Columns[CANTIDAD]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CANTIDAD]"
+                      length="50"
+                      lineageId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].Columns[CANTIDAD]"
+                      name="CANTIDAD"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA_PROCESO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA_PROCESO]"
+                      length="50"
+                      lineageId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA_PROCESO]"
+                      name="FECHA_PROCESO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].Columns[HORA_PROCESO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[HORA_PROCESO]"
+                      length="50"
+                      lineageId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].Columns[HORA_PROCESO]"
+                      name="HORA_PROCESO"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CENTRO]"
+                      dataType="wstr"
+                      length="50"
+                      name="CENTRO" />
+                    <externalMetadataColumn
+                      refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ALMACEN]"
+                      dataType="wstr"
+                      length="50"
+                      name="ALMACEN" />
+                    <externalMetadataColumn
+                      refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[REFERENCIA]"
+                      dataType="wstr"
+                      length="50"
+                      name="REFERENCIA" />
+                    <externalMetadataColumn
+                      refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA_DE_DOCUMENTO]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA_DE_DOCUMENTO" />
+                    <externalMetadataColumn
+                      refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MATERIAL]"
+                      dataType="wstr"
+                      length="50"
+                      name="MATERIAL" />
+                    <externalMetadataColumn
+                      refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MOVIMIENTO_SAP]"
+                      dataType="wstr"
+                      length="50"
+                      name="MOVIMIENTO_SAP" />
+                    <externalMetadataColumn
+                      refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CANTIDAD]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD" />
+                    <externalMetadataColumn
+                      refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA_PROCESO]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA_PROCESO" />
+                    <externalMetadataColumn
+                      refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[HORA_PROCESO]"
+                      dataType="wstr"
+                      length="50"
+                      name="HORA_PROCESO" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CENTRO]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CENTRO]"
+                      name="CENTRO" />
+                    <outputColumn
+                      refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ALMACEN]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ALMACEN]"
+                      name="ALMACEN" />
+                    <outputColumn
+                      refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[REFERENCIA]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[REFERENCIA]"
+                      name="REFERENCIA" />
+                    <outputColumn
+                      refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA_DE_DOCUMENTO]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA_DE_DOCUMENTO]"
+                      name="FECHA_DE_DOCUMENTO" />
+                    <outputColumn
+                      refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MATERIAL]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MATERIAL]"
+                      name="MATERIAL" />
+                    <outputColumn
+                      refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MOVIMIENTO_SAP]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MOVIMIENTO_SAP]"
+                      name="MOVIMIENTO_SAP" />
+                    <outputColumn
+                      refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CANTIDAD]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CANTIDAD]"
+                      name="CANTIDAD" />
+                    <outputColumn
+                      refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA_PROCESO]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA_PROCESO]"
+                      name="FECHA_PROCESO" />
+                    <outputColumn
+                      refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[HORA_PROCESO]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[HORA_PROCESO]"
+                      name="HORA_PROCESO" />
+                    <outputColumn
+                      refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\701_702  local.Paths[OLE DB Source Output]"
+              endId="Package\701_702  local\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\701_702  local\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{35E56EDA-7E61-41E0-9D96-82649FD3D9A9}"
+      DTS:From="Package\701_702"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\701_702  local" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="122,42"
+          Id="Package\701_702"
+          TopLeft="163,112" />
+        <NodeLayout
+          Size="150,42"
+          Id="Package\701_702  local"
+          TopLeft="356,110" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="285,132">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="71,0"
+              Start="0,0"
+              End="63.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="63.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\701_702">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\701_702\OLE DB Source"
+          TopLeft="163,83" />
+        <NodeLayout
+          Size="176,42"
+          Id="Package\701_702\Flat File Destination"
+          TopLeft="687,65" />
+        <EdgeLayout
+          Id="Package\701_702.Paths[OLE DB Source Output]"
+          TopLeft="320,104">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="367,-18"
+              Start="0,0"
+              End="359.5,-18">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="179.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="179.5,0"
+                    Point2="183.5,0"
+                    Point3="183.5,-4" />
+                  <mssgle:LineSegment
+                    End="183.5,-14" />
+                  <mssgle:CubicBezierSegment
+                    Point1="183.5,-14"
+                    Point2="183.5,-18"
+                    Point3="187.5,-18" />
+                  <mssgle:LineSegment
+                    End="359.5,-18" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\701_702\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\701_702  local">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\701_702  local\OLE DB Source"
+          TopLeft="163,83" />
+        <NodeLayout
+          Size="176,42"
+          Id="Package\701_702  local\Flat File Destination"
+          TopLeft="687,65" />
+        <EdgeLayout
+          Id="Package\701_702  local.Paths[OLE DB Source Output]"
+          TopLeft="320,104">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="367,-18"
+              Start="0,0"
+              End="359.5,-18">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="179.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="179.5,0"
+                    Point2="183.5,0"
+                    Point3="183.5,-4" />
+                  <mssgle:LineSegment
+                    End="183.5,-14" />
+                  <mssgle:CubicBezierSegment
+                    Point1="183.5,-14"
+                    Point2="183.5,-18"
+                    Point3="187.5,-18" />
+                  <mssgle:LineSegment
+                    End="359.5,-18" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

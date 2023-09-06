@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="fe-sql02.STA.pconnon"
+  DTS:DTSID="{D097C6A4-C776-4F17-9E1D-26DD04966E6F}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=fe-sql02;User ID=pconnon;Initial Catalog=STA;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA0d/CUJHLJkeqs0ZPm4XPJwAAAAACAAAAAAADZgAAwAAAABAAAAAN8njLvizV5qeRPSrLT4czAAAAAASAAACgAAAAEAAAAHD8CSTjDMXI4bX7mNGTC554AAAAHTucHc05bEwxhTmPn3l/Mr6FES1M+xiosYNCIgbQqgiJaKjXSKbhBBVvUPb3OodZ8lXUrPqTGJZKu7sWcVMBJ6AO198cQYGdTCVfmWa2OwNVoLcFkFKqdHFeB4OErrcWzK3FJXLzPdT3OZA1CtLRqkfqSQ4BHXO9FAAAAMX6VcJZMtcii1HSIqPChWaMICVh</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
