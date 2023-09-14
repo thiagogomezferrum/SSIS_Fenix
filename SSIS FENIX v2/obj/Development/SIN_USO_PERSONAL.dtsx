@@ -5,15 +5,14 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="FE-PCONNON"
   DTS:CreatorName="NTFERRUM\pconnon"
-  DTS:DTSID="{289D2537-BB47-4658-AD6A-D2364683A349}"
+  DTS:DTSID="{09E42BF2-C6EC-4627-90F4-394C9A19BABE}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.2000.167"
+  DTS:LastModifiedProductVersion="16.0.5035.3"
   DTS:LocaleID="11274"
-  DTS:ObjectName="Package1"
+  DTS:ObjectName="SIN_USO_PERSONAL"
   DTS:PackageType="5"
-  DTS:ProtectionLevel="1"
-  DTS:VersionBuild="16"
-  DTS:VersionGUID="{024B8FED-B946-4786-B0E0-C75DE57C35B7}">
+  DTS:VersionBuild="17"
+  DTS:VersionGUID="{616E08D6-8D38-4CAC-96C7-C3570BD64CB4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -118,11 +117,11 @@
           <components>
             <component
               refId="Package\PERSONAL\AS400"
-              componentClassID="Attunity.SSISODBCSrc"
+              componentClassID="Microsoft.SSISODBCSrc"
               description="ODBC Source"
               name="AS400"
               usesDispositions="true"
-              version="7">
+              version="1">
               <properties>
                 <property
                   dataType="System.String"
@@ -287,7 +286,8 @@
               contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Destination"
               localeId="11274"
-              name="Flat File Destination">
+              name="Flat File Destination"
+              version="1">
               <properties>
                 <property
                   dataType="System.Boolean"
@@ -400,7 +400,7 @@
           Id="Package\Execute SQL Task"
           TopLeft="97,28" />
         <NodeLayout
-          Size="139,42"
+          Size="138.666666666667,42"
           Id="Package\PERSONAL"
           TopLeft="457,136" />
         <EdgeLayout

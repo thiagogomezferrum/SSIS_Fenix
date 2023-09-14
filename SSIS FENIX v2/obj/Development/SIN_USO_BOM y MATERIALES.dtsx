@@ -7,13 +7,12 @@
   DTS:CreatorName="FERRUM\pconnon"
   DTS:DTSID="{7E3749C7-7365-4CD1-BBF9-C10FD5B6A972}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="14.0.2027.2"
+  DTS:LastModifiedProductVersion="16.0.5035.3"
   DTS:LocaleID="11274"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:ProtectionLevel="1"
-  DTS:VersionBuild="28"
-  DTS:VersionGUID="{7210A165-263E-4653-97E8-8BB6D4DFD45A}">
+  DTS:VersionBuild="31"
+  DTS:VersionGUID="{EE771E85-7899-491C-AEE8-E52230E9CC6A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -31,7 +30,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="\\192.168.200.3\dw\PRD\APROCESAR\mm_materiales.txt">
+          DTS:ConnectionString="\\sapfs.grupofv.com\FERRUM-DW\PRD\APROCESAR\mm_materiales.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -40,7 +39,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FECHA CREACIÓN"
-              DTS:DTSID="{4EC71FA3-E494-4D81-A527-4F5EB53689C6}"
+              DTS:DTSID="{7826B3A0-DBF8-443A-B49D-E277B4FD986F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -49,7 +48,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FECHA MODIFICACIÓN"
-              DTS:DTSID="{86861A8D-E4AE-498C-8571-043D7825A514}"
+              DTS:DTSID="{C2750E3F-5ADB-48AA-BDA4-912F0966BE3B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -58,7 +57,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CODIGO DE MATERIAL"
-              DTS:DTSID="{CDBC8E38-7D3B-45D9-B522-86D6E6016855}"
+              DTS:DTSID="{7405A367-9633-416D-A681-1916D0A6B28F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -67,7 +66,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DENOMINACION"
-              DTS:DTSID="{79F132C2-6B79-4A0A-8D70-8716F0625A5D}"
+              DTS:DTSID="{ED59BE43-15B0-4CE0-A0C6-6EBE9C6125E9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -76,7 +75,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="STOCK DE SEGURIDAD"
-              DTS:DTSID="{84198050-400B-4C56-8189-DFD5D316099D}"
+              DTS:DTSID="{1A50D95F-55D2-44E1-9AB5-A7E4ACD1726E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -85,7 +84,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PUNTO DE PEDIDO 1"
-              DTS:DTSID="{3FBED805-245D-4E92-B88C-93A2EFC7A8BF}"
+              DTS:DTSID="{7F729964-1253-405F-A5F5-5C3F8797E83F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -94,7 +93,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="GRUPO DE ARTICULO"
-              DTS:DTSID="{5945C180-2F43-410E-B0D1-FCC2756972D3}"
+              DTS:DTSID="{FAA29197-327C-47DE-A496-079F07D51A66}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -103,7 +102,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DENOMINACION GRUPO ARTICULO"
-              DTS:DTSID="{9ED74E05-295C-4BDE-987A-65F271771358}"
+              DTS:DTSID="{0A092ABD-34A4-4D04-A650-09AE1DACB808}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -112,7 +111,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PLAZO EM PREVISTO"
-              DTS:DTSID="{9AECE08D-4EC8-42F4-82A0-E97D575D91D4}"
+              DTS:DTSID="{0FE4F46C-B760-41A3-86B4-737451D308E9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -121,7 +120,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="UMB"
-              DTS:DTSID="{F3C30CBE-7EBC-4CCB-AC20-8AC8DC53BEB5}"
+              DTS:DTSID="{3BD2B2CB-DFB7-4A1C-B94A-DB6AE1E4E617}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -130,7 +129,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PETICION DE BORRADO MTE"
-              DTS:DTSID="{2D29D987-4C2F-4D22-A295-542B12BDA653}"
+              DTS:DTSID="{762219E2-0BC3-487D-ADFD-B07D4D2140D4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -139,7 +138,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="STATUS DE MATERIAL"
-              DTS:DTSID="{108D4312-56CC-4F19-9923-906B37619500}"
+              DTS:DTSID="{DE566283-719A-4295-BEB0-2BB90AE5FC31}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -148,7 +147,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CENTRO"
-              DTS:DTSID="{8D7027C0-8422-43BD-998B-36F2B3EEB238}"
+              DTS:DTSID="{492B9AF5-781F-4C28-B9B0-DA702548C643}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -157,7 +156,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PETICION DE BORRADO CENTRO"
-              DTS:DTSID="{4AA2F112-9DD7-481E-9571-B185A66E9D03}"
+              DTS:DTSID="{9FF90D65-F69D-42EC-A7A9-0292EAAED149}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -166,7 +165,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TIPO DE MATERIAL"
-              DTS:DTSID="{047AFFA2-E3A1-4930-96BE-FBEA1C3AFC3D}"
+              DTS:DTSID="{979CC8BC-7EF3-455D-AE80-82013AC2EF71}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -175,7 +174,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="GRUPO DE COMPRAS"
-              DTS:DTSID="{14D7359B-A150-4B7C-B653-4B9A93AD02B3}"
+              DTS:DTSID="{4F9D08E3-0E6E-425A-AE60-99AC25A463C6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -184,7 +183,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PLANIFICADOR DE NEC "
-              DTS:DTSID="{7935E678-BF28-4C62-8721-746EB072CB81}"
+              DTS:DTSID="{D1579AA6-5BF1-43D7-B86C-6697D29258EE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -193,7 +192,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TIPO MRP"
-              DTS:DTSID="{8D08B934-DA1F-41D1-8454-3DF9D9D20C9F}"
+              DTS:DTSID="{806FC678-AA69-4D54-A447-FF019BFD7FB6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -202,7 +201,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PUNTO DE PEDIDO 2"
-              DTS:DTSID="{9C947238-76A7-41E4-A4D3-DF76E08421AA}"
+              DTS:DTSID="{F4850D98-E4C2-45C0-A472-ECE2147FC0F3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -211,7 +210,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CALCULO TAMAÑO LOTE"
-              DTS:DTSID="{25C4915A-B550-40BE-86C9-EBEFF5C084EF}"
+              DTS:DTSID="{1986F3AD-3908-40C2-82D2-9268105AFFEC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -220,7 +219,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="INDICADOR ABC"
-              DTS:DTSID="{608381BA-E577-4A03-A14B-89291F363AF7}"
+              DTS:DTSID="{DE1B30CA-78D8-4CC4-9957-C1AD5B8EC074}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -229,7 +228,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TAMAÑO LOTE MINIMO"
-              DTS:DTSID="{263C5164-02A6-4467-82D2-B7084DC0E871}"
+              DTS:DTSID="{9B0E222A-CCC2-4A74-A648-0989A550B26D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -238,7 +237,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="VALOR REDONDEO"
-              DTS:DTSID="{29EF5578-10A7-4726-B614-0E48974A8C3C}"
+              DTS:DTSID="{BDE82F26-46D7-46EB-99E4-2616499C82C4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -247,7 +246,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TIEMPO TRAT EM"
-              DTS:DTSID="{C84CAB38-32F0-4FA7-883A-44BD19D872A0}"
+              DTS:DTSID="{05F1C6F9-543F-4C22-A397-CE5C1D278E63}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -256,7 +255,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PERFIL DE COBERTURA"
-              DTS:DTSID="{26DAA9E2-EFF7-4039-AE76-99526F4CA737}"
+              DTS:DTSID="{E7A5706C-8889-4770-854A-36D218C0C1C9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -265,7 +264,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="INVENTARIO CICLICO"
-              DTS:DTSID="{541D546B-2893-4B41-A943-DDCC56E014B3}"
+              DTS:DTSID="{03708889-174E-41F0-B5B7-D4E13114FC42}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -274,7 +273,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="AUTO MATERIAL QM"
-              DTS:DTSID="{7EFA9ABE-E97D-4B20-8B9A-EC08CA9D8FDB}"
+              DTS:DTSID="{2BD30F8A-AC7E-4B5E-B6C9-9606866923D6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -283,7 +282,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="MATERIAL ANTERIOR"
-              DTS:DTSID="{81901C7B-1EE6-4ABC-ADB3-15BABA07BED5}"
+              DTS:DTSID="{203284CA-30E2-46C8-A8D0-261C5B4DBB51}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -292,7 +291,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="JERARQUIA"
-              DTS:DTSID="{EE3521A7-61B9-4C69-81DF-2FF00EE09A78}"
+              DTS:DTSID="{2B834B8F-9C7B-4D92-8FBD-D52C8E65898E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -301,7 +300,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="GRUPO MATERIAL 1"
-              DTS:DTSID="{9B0A8F79-0F67-42A8-9B65-D5FC10835B18}"
+              DTS:DTSID="{E30DE2B6-49E3-440C-B4B6-6935A831F6CA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -310,7 +309,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="GRUPO MATERIAL 2"
-              DTS:DTSID="{B2B23646-4839-46BE-ABED-3A2AC0ADE1DF}"
+              DTS:DTSID="{AE061F34-31F4-4E08-8EE7-36C8EE687B9D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -319,7 +318,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="GRUPO MATERIAL 3"
-              DTS:DTSID="{F723E182-E919-4B32-BF7A-9DFA8EF76380}"
+              DTS:DTSID="{68DE3D7D-983B-466E-A56D-C90575DFB406}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -328,7 +327,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PESO NETO"
-              DTS:DTSID="{011AB38C-1C3D-43E7-9048-80925659F528}"
+              DTS:DTSID="{D43A7791-5F3E-4DDB-9DA3-B80A874ED153}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -337,7 +336,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PESO BRUTO"
-              DTS:DTSID="{5181525C-E0DE-4BAB-9D83-DD7BF25A7B35}"
+              DTS:DTSID="{52DD51EB-E100-4021-9280-372455500578}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -346,7 +345,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="UNIDAD PESO"
-              DTS:DTSID="{1C9671DC-DAA2-44F4-9981-7B03EC5B04C1}"
+              DTS:DTSID="{1A474662-D8C7-4527-8BF1-AE622E2FC225}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -355,7 +354,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="VOLUMEN"
-              DTS:DTSID="{77ED63CB-84C6-486D-AF2C-7F15ABD9FD1C}"
+              DTS:DTSID="{C59FC6F6-C757-4EFC-A9D4-7B0C56DD08D4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -364,7 +363,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="UNIDAD VOLUMEN"
-              DTS:DTSID="{06716777-5E7B-4B5C-9951-33CA85D05971}"
+              DTS:DTSID="{DD5F0E32-2DFB-423F-B931-528C584B9B78}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -373,7 +372,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DIMENSION"
-              DTS:DTSID="{BDBFD326-8481-4D48-9C55-C467C608C1BE}"
+              DTS:DTSID="{11EE1D57-FECE-4A42-9B30-A946B4DAC3EE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -382,7 +381,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ESTADO CADENA DIST"
-              DTS:DTSID="{96543B09-81CE-4A34-B78E-F08DFC6B2D1C}"
+              DTS:DTSID="{61DDB384-AF79-4415-B01F-CEF6C0056F10}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -391,7 +390,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="NÚMERO EAN"
-              DTS:DTSID="{AC56900A-2C54-4EFF-B128-61E803625B9E}"
+              DTS:DTSID="{653FD242-FA93-4821-B860-FE8062FF2B3F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -400,7 +399,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CATEGORIA DE VALORACIÓN"
-              DTS:DTSID="{935825EC-593B-4864-BAA9-8EEBE54F1F42}"
+              DTS:DTSID="{F99DA9AB-1C88-43D1-ACF5-77B125880B63}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -409,7 +408,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CENTRO DE BENEFICIO"
-              DTS:DTSID="{28AA7519-648E-480F-B766-279393554501}"
+              DTS:DTSID="{449D847C-49D9-4754-9C2E-2ADA6CE00892}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -429,7 +428,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="\\192.168.200.3\dw\PRD\APROCESAR\pp_bom.txt">
+          DTS:ConnectionString="\\sapfs.grupofv.com\FERRUM-DW\PRD\APROCESAR\mm_materiales.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -438,7 +437,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CODIGO MATERIAL"
-              DTS:DTSID="{4D0DB153-8652-4DDE-B414-800E9BD32E8C}"
+              DTS:DTSID="{4F60787B-A97C-47D3-B761-30D8A6C474E2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -447,7 +446,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CENTRO"
-              DTS:DTSID="{412A7228-0534-486F-A6DD-24B10F088C3B}"
+              DTS:DTSID="{93A410F0-4C87-460E-A9FB-DC284147AA63}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -456,7 +455,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ALTERNATIVA"
-              DTS:DTSID="{DE26FBCF-0116-4843-8410-3763589CD310}"
+              DTS:DTSID="{02158B2D-0514-4681-B7D2-87A35574430A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -465,7 +464,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="POSICION"
-              DTS:DTSID="{EB22CB22-C90F-4D8E-AB39-934F520FE027}"
+              DTS:DTSID="{FA38E4DE-99D6-4707-9EFB-A58ABA1AA432}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -474,7 +473,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CANTIDAD BASE"
-              DTS:DTSID="{16E497BC-7580-4563-BF46-0F50E0945798}"
+              DTS:DTSID="{1E788B60-3D99-437D-A637-2A71417AE9C0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -483,7 +482,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="COMPONENTE"
-              DTS:DTSID="{C96E3993-00D3-4C8D-BB0A-8A2631CC44CF}"
+              DTS:DTSID="{07C51AD8-DBF7-4206-8BA5-241342C3BC81}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -492,7 +491,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CANTIDAD COMPONENTE"
-              DTS:DTSID="{B60D2038-1D24-408E-8AFA-368B312223D3}"
+              DTS:DTSID="{CBC4E506-237A-4E60-9350-6485EAE92C70}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -501,7 +500,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="UM COMPONENTE"
-              DTS:DTSID="{B3FF31C9-294C-4A00-A9E5-ED7DDE391662}"
+              DTS:DTSID="{E1A8C849-43E2-428A-9C15-B766C12C50B9}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -856,8 +855,8 @@
               <connections>
                 <connection
                   refId="Package\BOM\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{D097C6A4-C776-4F17-9E1D-26DD04966E6F}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[fe-sql02.STA.pconnon]"
+                  connectionManagerID="{7A0FBFB7-8486-4037-9EDF-D1730E2C35B4}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[ag-listenerfv.fl-0.fv.com.ar.WEBAPP.ssis_fenix 1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1023,7 +1022,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{D097C6A4-C776-4F17-9E1D-26DD04966E6F}"
+          SQLTask:Connection="{7A0FBFB7-8486-4037-9EDF-D1730E2C35B4}"
           SQLTask:SqlStatementSource="truncate table BOM&#xA;truncate table MATERIALES" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -1040,7 +1039,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{6F629885-837D-457B-80EC-A9CB987F09E3}"
+          SQLTask:Connection="{7A0FBFB7-8486-4037-9EDF-D1730E2C35B4}"
           SQLTask:SqlStatementSource="IF (SELECT Count(*) FROM sta.dbo.bom) &gt; 0&#xA;  BEGIN&#xA;      TRUNCATE TABLE bom&#xA;&#xA;      INSERT INTO bom&#xA;                  (CODIGO_MATERIAL,&#xA;                   CENTRO,&#xA;                   ALTERNATIVA,&#xA;                   POSICION,&#xA;                   CANTIDAD_BASE,&#xA;                   COMPONENTE,&#xA;                   CANTIDAD_COMPONENTE,&#xA;                   UM_COMPONENTE)&#xA;      SELECT CODIGO_MATERIAL,&#xA;             CENTRO,&#xA;             ALTERNATIVA,&#xA;             POSICION,&#xA;             CANTIDAD_BASE,&#xA;             COMPONENTE,&#xA;             CANTIDAD_COMPONENTE,&#xA;             UM_COMPONENTE&#xA;      FROM   sta.dbo.bom&#xA;  END  &#xA;&#xA;&#xA;IF (SELECT Count(*) FROM sta.dbo.mm_materiales) &gt; 0&#xA;  BEGIN&#xA;      TRUNCATE TABLE mm_materiales&#xA;&#xA;      INSERT INTO mm_materiales&#xA;                  (CENTRO,&#xA;       CODIGO_DE_MATERIAL,&#xA;       DENOMINACION,&#xA;       DENOMINACION_GRUPO_ARTICULO,&#xA;       UMB,&#xA;       STATUS_DE_MATERIAL,&#xA;       TIPO_DE_MATERIAL,&#xA;       GRUPO_DE_COMPRAS,&#xA;       MATERIAL_ANTERIOR,&#xA;       JERARQUIA,&#xA;       GRUPO_MATERIAL_1,&#xA;       GRUPO_MATERIAL_2,&#xA;       GRUPO_MATERIAL_3,&#xA;       PESO_NETO,&#xA;       PESO_BRUTO,&#xA;       UNIDAD_PESO,&#xA;       VOLUMEN,&#xA;       UNIDAD_VOLUMEN,&#xA;       DIMENSION,&#xA;       ESTADO_CADENA_DIST,&#xA;       NUMERO_EAN,&#xA;       CATEGORIA_DE_VALORACION,&#xA;       CENTRO_DE_BENEFICIO,&#xA;       GRUPO_DE_ARTICULO)&#xA; SELECT CENTRO,&#xA;       CODIGO_DE_MATERIAL,&#xA;       DENOMINACION,&#xA;       DENOMINACION_GRUPO_ARTICULO,&#xA;       UMB,&#xA;       STATUS_DE_MATERIAL,&#xA;       TIPO_DE_MATERIAL,&#xA;       GRUPO_DE_COMPRAS,&#xA;       MATERIAL_ANTERIOR,&#xA;       JERARQUIA,&#xA;       GRUPO_MATERIAL_1,&#xA;       GRUPO_MATERIAL_2,&#xA;       GRUPO_MATERIAL_3,&#xA;       PESO_NETO,&#xA;       PESO_BRUTO,&#xA;       UNIDAD_PESO,&#xA;       VOLUMEN,&#xA;       UNIDAD_VOLUMEN,&#xA;       DIMENSION,&#xA;       ESTADO_CADENA_DIST,&#xA;       NUMERO_EAN,&#xA;       CATEGORIA_DE_VALORACION,&#xA;       replace(CENTRO_DE_BENEFICIO,'|','') CENTRO_DE_BENEFICIO,&#xA;       GRUPO_DE_ARTICULO&#xA;FROM   sta.dbo.mm_materiales  &#xA;  END  " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -1117,8 +1116,8 @@
               <connections>
                 <connection
                   refId="Package\MATERAILES\OLE DB Destination 1.Connections[OleDbConnection]"
-                  connectionManagerID="{D097C6A4-C776-4F17-9E1D-26DD04966E6F}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[fe-sql02.STA.pconnon]"
+                  connectionManagerID="{7A0FBFB7-8486-4037-9EDF-D1730E2C35B4}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[ag-listenerfv.fl-0.fv.com.ar.WEBAPP.ssis_fenix 1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1409,8 +1408,8 @@ FROM   MATERIALES</property>
               <connections>
                 <connection
                   refId="Package\MATERAILES\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{6523C765-3D82-486C-805A-52576831529F}:invalid"
-                  connectionManagerRefId="{6523C765-3D82-486C-805A-52576831529F}:invalid"
+                  connectionManagerID="{7A0FBFB7-8486-4037-9EDF-D1730E2C35B4}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[ag-listenerfv.fl-0.fv.com.ar.WEBAPP.ssis_fenix 1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1643,7 +1642,7 @@ FROM   MATERIALES</property>
                     <externalMetadataColumn
                       refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ESTADO_MATERIAL]"
                       dataType="wstr"
-                      length="24"
+                      length="50"
                       name="ESTADO_MATERIAL" />
                   </externalMetadataColumns>
                 </output>
@@ -1738,7 +1737,7 @@ FROM   MATERIALES</property>
                     <outputColumn
                       refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ESTADO_MATERIAL]"
                       dataType="wstr"
-                      length="24"
+                      length="50"
                       lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ESTADO_MATERIAL]"
                       name="ESTADO_MATERIAL" />
                     <outputColumn
@@ -1813,77 +1812,43 @@ FROM   MATERIALES</property>
           Id="Package\BOM"
           TopLeft="108.374993005767,128.736844114319" />
         <NodeLayout
-          Size="168,43"
+          Size="168,42.6666666666667"
           Id="Package\Execute SQL Task"
-          TopLeft="100.624995743856,36.1052642139372" />
+          TopLeft="86.2499959580602,36.7894747531316" />
         <NodeLayout
-          Size="185,43"
+          Size="185.333333333334,42.6666666666667"
           Id="Package\INSERT EN WEBAPP"
           TopLeft="435.37500023283,129.473684068862" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="184.624995743856,79.1052642139372">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-24.250002738089,49.6315799003818"
-              Start="0,0"
-              End="-24.250002738089,42.1315799003818">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.8157899501909" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.8157899501909"
-                    Point2="0,24.8157899501909"
-                    Point3="-4,24.8157899501909" />
-                  <mssgle:LineSegment
-                    End="-20.250002738089,24.8157899501909" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-20.250002738089,24.8157899501909"
-                    Point2="-24.250002738089,24.8157899501909"
-                    Point3="-24.250002738089,28.8157899501909" />
-                  <mssgle:LineSegment
-                    End="-24.250002738089,42.1315799003818" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
-          Size="149,42"
+          Size="149.333333333334,42"
           Id="Package\MATERAILES"
           TopLeft="235,177" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="212.374993005767,149.736844114319">
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="170.24999595806,79.4561414197982">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="22.625006994233,48.263155885681"
+              EndConnector="-9.87500295229316,49.2807026945208"
               Start="0,0"
-              End="15.125006994233,48.263155885681">
+              End="-9.87500295229316,41.7807026945208">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="7.3125034971165,0" />
+                    End="0,20.6403513472604" />
                   <mssgle:CubicBezierSegment
-                    Point1="7.3125034971165,0"
-                    Point2="11.3125034971165,0"
-                    Point3="11.3125034971165,4" />
+                    Point1="0,20.6403513472604"
+                    Point2="0,24.6403513472604"
+                    Point3="-4,24.6403513472604" />
                   <mssgle:LineSegment
-                    End="11.3125034971165,44.263155885681" />
+                    End="-5.87500295229316,24.6403513472604" />
                   <mssgle:CubicBezierSegment
-                    Point1="11.3125034971165,44.263155885681"
-                    Point2="11.3125034971165,48.263155885681"
-                    Point3="15.3125034971165,48.263155885681" />
+                    Point1="-5.87500295229316,24.6403513472604"
+                    Point2="-9.87500295229316,24.6403513472604"
+                    Point3="-9.87500295229316,28.6403513472604" />
                   <mssgle:LineSegment
-                    End="15.125006994233,48.263155885681" />
+                    End="-9.87500295229316,41.7807026945208" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1926,6 +1891,40 @@ FROM   MATERIALES</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="212.374993005767,149.736844114319">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="22.625006994233,48.263155885681"
+              Start="0,0"
+              End="15.125006994233,48.263155885681">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="7.3125034971165,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="7.3125034971165,0"
+                    Point2="11.3125034971165,0"
+                    Point3="11.3125034971165,4" />
+                  <mssgle:LineSegment
+                    End="11.3125034971165,44.263155885681" />
+                  <mssgle:CubicBezierSegment
+                    Point1="11.3125034971165,44.263155885681"
+                    Point2="11.3125034971165,48.263155885681"
+                    Point3="15.3125034971165,48.263155885681" />
+                  <mssgle:LineSegment
+                    End="15.125006994233,48.263155885681" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -1935,11 +1934,11 @@ FROM   MATERIALES</property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="101,43"
+          Size="101.333333333334,42.6666666666667"
           Id="Package\BOM\bom"
           TopLeft="185.37499419786,55.2631595560719" />
         <NodeLayout
-          Size="175,43"
+          Size="174.666666666667,42.6666666666667"
           Id="Package\BOM\OLE DB Destination"
           TopLeft="434.124990863726,50.8421068601001" />
         <EdgeLayout
@@ -1988,25 +1987,25 @@ FROM   MATERIALES</property>
         <NodeLayout
           Size="186,42"
           Id="Package\MATERAILES\OLE DB Destination 1"
-          TopLeft="339,65" />
+          TopLeft="317,57" />
         <NodeLayout
-          Size="157,42"
+          Size="157.333333333334,42"
           Id="Package\MATERAILES\OLE DB Source"
           TopLeft="60,60" />
         <EdgeLayout
           Id="Package\MATERAILES.Paths[OLE DB Source Output]"
-          TopLeft="217,83.5">
+          TopLeft="217.333333333333,79.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="122,0"
+              EndConnector="99.6666666666666,0"
               Start="0,0"
-              End="114.5,0">
+              End="92.1666666666666,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="114.5,0" />
+                    End="92.1666666666666,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2018,6 +2017,19 @@ FROM   MATERIALES</property>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\MATERAILES\OLE DB Destination 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\MATERAILES\OLE DB Source">
     <Properties>

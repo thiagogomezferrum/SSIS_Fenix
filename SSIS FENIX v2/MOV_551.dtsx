@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="9/29/2021 2:04:13 PM"
@@ -7,13 +7,12 @@
   DTS:CreatorName="NTFERRUM\pconnon"
   DTS:DTSID="{D47ACEE8-D341-4427-B494-5B8A5EAC38EE}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.2000.167"
+  DTS:LastModifiedProductVersion="16.0.5035.3"
   DTS:LocaleID="11274"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:ProtectionLevel="1"
-  DTS:VersionBuild="10"
-  DTS:VersionGUID="{CEFFF6B8-185C-4FC7-A6D0-EF6022E74477}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{4BD0E5DE-E7B5-44FC-B449-5CB9D7F24CE1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -31,7 +30,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="\\linuxfil.ntferrum.local\sap-interfaces\PRD\Z19957\MOV_551\APROCESAR\rotura_fenix.csv">
+          DTS:ConnectionString="\\sapfs.grupofv.com\SAP-Interfaces\PRD\Z19957\MOV_551\APROCESAR\rotura_fenix.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -40,7 +39,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FECHA"
-              DTS:DTSID="{3ABB1BE0-B044-48E6-9197-E5819EFC1E3C}"
+              DTS:DTSID="{C8A18694-081A-4A81-8E82-D02552E78D64}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +47,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="REFERENCIA"
-              DTS:DTSID="{7B6515BB-B9B1-4208-BE75-6AA730F50EE5}"
+              DTS:DTSID="{93785E4F-160A-4C33-9C21-BEB4DF31B036}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +56,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="MATERIAL"
-              DTS:DTSID="{28A06073-F3C7-4FE9-8681-51E36363803C}"
+              DTS:DTSID="{F05423D0-A8EC-456C-8F80-8F38B70DA264}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -66,7 +65,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CENTRO"
-              DTS:DTSID="{E316E549-429C-41B0-B50A-6A530B9571FF}"
+              DTS:DTSID="{8519F885-DE9E-48AE-B71B-4D23AE8AB4CA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -75,7 +74,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ALMACEN"
-              DTS:DTSID="{F5DA63D7-67F8-4C7A-8C63-7D2D088A80EF}"
+              DTS:DTSID="{85A02C89-98DB-49D1-9185-DD85F8B8FE13}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -84,7 +83,7 @@
               DTS:DataPrecision="11"
               DTS:TextQualified="True"
               DTS:ObjectName="MOVIMIENTO"
-              DTS:DTSID="{B74D0C91-D03B-484C-B85F-2F893E6A8EB3}"
+              DTS:DTSID="{EEC5BBD4-B43A-4DCB-9CC1-3156A994D212}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -93,7 +92,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CANTIDAD"
-              DTS:DTSID="{E182F8FA-CCA0-4260-B1C6-0F013C172D7A}"
+              DTS:DTSID="{94856428-A46E-44A6-83E5-127ED1982B90}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -102,7 +101,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FECHA_PROCESO"
-              DTS:DTSID="{330715AA-9090-4A3A-B5FF-75BB5C3DE8BD}"
+              DTS:DTSID="{888F4F07-D97B-4FDB-81AF-03351EC79E89}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -111,7 +110,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="HORA_PROCESO"
-              DTS:DTSID="{F7782D9E-8DB1-4651-A6A6-625D7B7CC343}"
+              DTS:DTSID="{D1A33780-8F32-408B-9C4B-F169825D70AE}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -140,7 +139,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FECHA"
-              DTS:DTSID="{3D306A49-A456-436E-B24E-B29095A9CBEF}"
+              DTS:DTSID="{0D16CE6B-54C3-4D7A-8689-5B29C8D5C1E2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -148,7 +147,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="REFERENCIA"
-              DTS:DTSID="{DC2F8EFE-9954-459B-BCA6-6353A286233B}"
+              DTS:DTSID="{552BAF77-5AE2-43BD-AF53-5EB5B13095E9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -157,7 +156,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="MATERIAL"
-              DTS:DTSID="{BECDEBAC-C643-4415-A8CE-A38E984F8914}"
+              DTS:DTSID="{37B8EF29-7072-42F7-8CAA-D10E42694A1E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -166,7 +165,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CENTRO"
-              DTS:DTSID="{ED35EBA4-4C93-4B1B-BB4D-906147C13AD9}"
+              DTS:DTSID="{FD37226B-9BC0-4482-924D-11D0647299F1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -175,7 +174,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ALMACEN"
-              DTS:DTSID="{D8FE2DE4-5EBB-44B7-BD88-E1C8EAE7CB98}"
+              DTS:DTSID="{41DB49A2-C1C1-496A-B8FF-76173E349334}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -184,7 +183,7 @@
               DTS:DataPrecision="11"
               DTS:TextQualified="True"
               DTS:ObjectName="MOVIMIENTO"
-              DTS:DTSID="{91D57554-5CB5-48E2-98A3-18817C4FC168}"
+              DTS:DTSID="{B24E78AA-ECC4-4035-88FA-9FFE18379A10}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -193,7 +192,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CANTIDAD"
-              DTS:DTSID="{E6126AE5-1F71-4BAE-BA85-82B58E84F274}"
+              DTS:DTSID="{C7142C29-C609-4C96-BFC6-97280D04ECFC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -202,7 +201,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FECHA_PROCESO"
-              DTS:DTSID="{C8D6BBE9-3678-4394-96AA-E744FF1E5A6A}"
+              DTS:DTSID="{DC01665E-088B-4065-A63F-5FF1737D347C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -211,7 +210,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="HORA_PROCESO"
-              DTS:DTSID="{E7EA687C-A8DD-4C69-B804-E7AAEB652249}"
+              DTS:DTSID="{951F6B0F-A8E7-480D-8708-AA3C288C8C5D}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -240,7 +239,8 @@
               contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Destination"
               localeId="11274"
-              name="Flat File Destination">
+              name="Flat File Destination"
+              version="1">
               <properties>
                 <property
                   dataType="System.Boolean"
@@ -408,7 +408,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">exec INTERFAZ_ROTURAS_FENIX 'semanal'</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">exec INTERFAZ_ROTURAS_FENIX 'semanal'</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -434,8 +434,8 @@
               <connections>
                 <connection
                   refId="Package\MOV_551\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{6F629885-837D-457B-80EC-A9CB987F09E3}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[fe-sql02.WEBAPP.pbi_webapp_ro 1]"
+                  connectionManagerID="{7A0FBFB7-8486-4037-9EDF-D1730E2C35B4}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[ag-listenerfv.fl-0.fv.com.ar.WEBAPP.ssis_fenix 1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -691,7 +691,8 @@
               contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Destination"
               localeId="11274"
-              name="Flat File Destination">
+              name="Flat File Destination"
+              version="1">
               <properties>
                 <property
                   dataType="System.Boolean"
@@ -859,7 +860,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">exec INTERFAZ_ROTURAS_FENIX 'semanal'</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">exec INTERFAZ_ROTURAS_FENIX 'semanal'</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -885,8 +886,8 @@
               <connections>
                 <connection
                   refId="Package\MOV_551 1\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{6F629885-837D-457B-80EC-A9CB987F09E3}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[fe-sql02.WEBAPP.pbi_webapp_ro 1]"
+                  connectionManagerID="{7A0FBFB7-8486-4037-9EDF-D1730E2C35B4}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[ag-listenerfv.fl-0.fv.com.ar.WEBAPP.ssis_fenix 1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1150,12 +1151,12 @@
           Id="Package\MOV_551"
           TopLeft="351,91" />
         <NodeLayout
-          Size="128,42"
+          Size="136,42.6666666666667"
           Id="Package\MOV_551 1"
           TopLeft="351,193" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="415,133">
+          TopLeft="417,133">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1182,37 +1183,47 @@
     design-time-name="Package\MOV_551">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="157,42"
+          Size="157.333333333334,50"
           Id="Package\MOV_551\OLE DB Source"
-          TopLeft="381,107" />
+          TopLeft="101.000004172325,65.2631571091443" />
         <NodeLayout
           Size="176,42"
           Id="Package\MOV_551\Flat File Destination"
-          TopLeft="672,110" />
+          TopLeft="405.750003967434,83.9999995106145" />
         <EdgeLayout
           Id="Package\MOV_551.Paths[OLE DB Source Output]"
-          TopLeft="538,129.5">
+          TopLeft="258.333337505658,90.2631571091443">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="134,0"
+              EndConnector="147.416666461776,14.7368424014702"
               Start="0,0"
-              End="126.5,0">
+              End="139.916666461776,14.7368424014702">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="126.5,0" />
+                    End="69.7083332308879,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="69.7083332308879,0"
+                    Point2="73.7083332308879,0"
+                    Point3="73.7083332308879,4" />
+                  <mssgle:LineSegment
+                    End="73.7083332308879,10.7368424014702" />
+                  <mssgle:CubicBezierSegment
+                    Point1="73.7083332308879,10.7368424014702"
+                    Point2="73.7083332308879,14.7368424014702"
+                    Point3="77.7083332308879,14.7368424014702" />
+                  <mssgle:LineSegment
+                    End="139.916666461776,14.7368424014702" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -1230,9 +1241,9 @@
     design-time-name="Package\MOV_551 1">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="157,42"
+          Size="157.333333333334,42"
           Id="Package\MOV_551 1\OLE DB Source"
           TopLeft="381,107" />
         <NodeLayout
@@ -1258,13 +1269,19 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\MOV_551 1\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>

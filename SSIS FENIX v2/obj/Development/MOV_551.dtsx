@@ -1,26 +1,26 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
-  DTS:CreationDate="9/29/2021 1:24:42 PM"
+  DTS:CreationDate="9/29/2021 2:04:13 PM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="FE-PCONNON"
   DTS:CreatorName="NTFERRUM\pconnon"
-  DTS:DTSID="{D7877A7E-7728-4546-9C06-0018F96BC77D}"
+  DTS:DTSID="{D47ACEE8-D341-4427-B494-5B8A5EAC38EE}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="16.0.5035.3"
   DTS:LocaleID="11274"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="15"
-  DTS:VersionGUID="{40AB4819-EC31-4C6F-9A76-BB152D841F15}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{4BD0E5DE-E7B5-44FC-B449-5CB9D7F24CE1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[abm_modelos_fenix.csv]"
+      DTS:refId="Package.ConnectionManagers[rotura_fenix.csv]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{70A10940-3DA3-4A32-8654-46BA6A37C8A0}"
-      DTS:ObjectName="abm_modelos_fenix.csv">
+      DTS:DTSID="{CA3FBA4A-A0B7-40FA-8DCF-4A799F39777E}"
+      DTS:ObjectName="rotura_fenix.csv">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -30,7 +30,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="\\sapfs.grupofv.com\SAP-Interfaces\PRD\Z19957\MOV_201_202\APROCESAR\abm_modelos_fenix.csv">
+          DTS:ConnectionString="\\sapfs.grupofv.com\SAP-Interfaces\PRD\Z19957\MOV_551\APROCESAR\rotura_fenix.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -39,7 +39,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FECHA"
-              DTS:DTSID="{FE9AFCB4-74D7-47E5-9B5F-90CE6B31BD80}"
+              DTS:DTSID="{C8A18694-081A-4A81-8E82-D02552E78D64}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -47,7 +47,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="REFERENCIA"
-              DTS:DTSID="{FF2475F7-8502-40D7-AB8D-E69581A461F3}"
+              DTS:DTSID="{93785E4F-160A-4C33-9C21-BEB4DF31B036}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -56,7 +56,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="MATERIAL"
-              DTS:DTSID="{B0A6F29E-003D-4199-9A5A-9B8E1E966996}"
+              DTS:DTSID="{F05423D0-A8EC-456C-8F80-8F38B70DA264}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -65,16 +65,16 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CENTRO"
-              DTS:DTSID="{544693FE-43F4-44E0-A12B-83703CD0944F}"
+              DTS:DTSID="{8519F885-DE9E-48AE-B71B-4D23AE8AB4CA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="4"
-              DTS:DataType="129"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ALMACEN"
-              DTS:DTSID="{74718529-F50B-4FA1-8616-2D7A5041FD11}"
+              DTS:DTSID="{85A02C89-98DB-49D1-9185-DD85F8B8FE13}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -83,17 +83,16 @@
               DTS:DataPrecision="11"
               DTS:TextQualified="True"
               DTS:ObjectName="MOVIMIENTO"
-              DTS:DTSID="{99F4A50E-078A-4438-944E-86D6CA20C122}"
+              DTS:DTSID="{EEC5BBD4-B43A-4DCB-9CC1-3156A994D212}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="131"
-              DTS:DataPrecision="38"
-              DTS:DataScale="6"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CANTIDAD"
-              DTS:DTSID="{F4EFC907-A144-42D1-B7E2-D858890EEB37}"
+              DTS:DTSID="{94856428-A46E-44A6-83E5-127ED1982B90}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -102,7 +101,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FECHA_PROCESO"
-              DTS:DTSID="{08B99959-3652-45E3-A970-9FAB8B27CEF8}"
+              DTS:DTSID="{888F4F07-D97B-4FDB-81AF-03351EC79E89}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -111,17 +110,17 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="HORA_PROCESO"
-              DTS:DTSID="{D706EFC4-73E4-49BC-A0E6-A8F894EB0BEA}"
+              DTS:DTSID="{D1A33780-8F32-408B-9C4B-F169825D70AE}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[abm_modelos_fenix.csv 1]"
+      DTS:refId="Package.ConnectionManagers[rotura_fenix.csv 1]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{c37a081d-42b2-4580-8cf4-65c2157cb9d8}"
-      DTS:ObjectName="abm_modelos_fenix.csv 1">
+      DTS:DTSID="{a3b8a886-38df-4230-a8e7-b0174d9e1d15}"
+      DTS:ObjectName="rotura_fenix.csv 1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -131,7 +130,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="C:\temp\abm_modelos_fenix.csv">
+          DTS:ConnectionString="C:\temp\rotura_fenix.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -140,7 +139,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FECHA"
-              DTS:DTSID="{C8CE8CB5-10E1-4D59-AE06-7A746FB7D543}"
+              DTS:DTSID="{0D16CE6B-54C3-4D7A-8689-5B29C8D5C1E2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -148,7 +147,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="REFERENCIA"
-              DTS:DTSID="{0C1FFEBC-1555-4019-AEE5-3CF8482B917B}"
+              DTS:DTSID="{552BAF77-5AE2-43BD-AF53-5EB5B13095E9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -157,7 +156,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="MATERIAL"
-              DTS:DTSID="{AA0737C6-E8AE-477B-B736-899894032219}"
+              DTS:DTSID="{37B8EF29-7072-42F7-8CAA-D10E42694A1E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -166,16 +165,16 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CENTRO"
-              DTS:DTSID="{EE317F43-FA6D-40DF-AAAE-C43CF111F09B}"
+              DTS:DTSID="{FD37226B-9BC0-4482-924D-11D0647299F1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="4"
-              DTS:DataType="129"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ALMACEN"
-              DTS:DTSID="{A0332332-BAF9-4A18-9A31-A2EF03C7F8F0}"
+              DTS:DTSID="{41DB49A2-C1C1-496A-B8FF-76173E349334}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -184,17 +183,16 @@
               DTS:DataPrecision="11"
               DTS:TextQualified="True"
               DTS:ObjectName="MOVIMIENTO"
-              DTS:DTSID="{6D5F35C7-12FD-482D-A5C0-1C3AF2022140}"
+              DTS:DTSID="{B24E78AA-ECC4-4035-88FA-9FFE18379A10}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="131"
-              DTS:DataPrecision="38"
-              DTS:DataScale="6"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CANTIDAD"
-              DTS:DTSID="{4A89AFDB-BBF8-4B47-8054-065934DF7E30}"
+              DTS:DTSID="{C7142C29-C609-4C96-BFC6-97280D04ECFC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -203,7 +201,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FECHA_PROCESO"
-              DTS:DTSID="{73329E33-2420-428D-A4CA-29333ECFA3C1}"
+              DTS:DTSID="{DC01665E-088B-4065-A63F-5FF1737D347C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -212,7 +210,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="HORA_PROCESO"
-              DTS:DTSID="{BB206320-E3A6-4AF4-BC4A-1BD983FD502E}"
+              DTS:DTSID="{951F6B0F-A8E7-480D-8708-AA3C288C8C5D}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -222,13 +220,13 @@
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\MOV_201_202"
+      DTS:refId="Package\MOV_551"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{2BA2576C-1A31-4E9B-8BCF-322FFA200E0E}"
+      DTS:DTSID="{CADE3CF1-DC4F-405C-9A9C-A1F8E57F52C6}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="MOV_201_202"
+      DTS:ObjectName="MOV_551"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -236,7 +234,7 @@
           version="1">
           <components>
             <component
-              refId="Package\MOV_201_202\Flat File Destination"
+              refId="Package\MOV_551\Flat File Destination"
               componentClassID="Microsoft.FlatFileDestination"
               contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Destination"
@@ -260,126 +258,124 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\MOV_201_202\Flat File Destination.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[abm_modelos_fenix.csv]"
-                  connectionManagerRefId="Package.ConnectionManagers[abm_modelos_fenix.csv]"
+                  refId="Package\MOV_551\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[rotura_fenix.csv]"
+                  connectionManagerRefId="Package.ConnectionManagers[rotura_fenix.csv]"
                   name="FlatFileConnection" />
               </connections>
               <inputs>
                 <input
-                  refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input]"
+                  refId="Package\MOV_551\Flat File Destination.Inputs[Flat File Destination Input]"
                   hasSideEffects="true"
                   name="Flat File Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].Columns[FECHA]"
+                      refId="Package\MOV_551\Flat File Destination.Inputs[Flat File Destination Input].Columns[FECHA]"
                       cachedDataType="wstr"
                       cachedLength="4000"
                       cachedName="FECHA"
-                      externalMetadataColumnId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA]"
-                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA]" />
+                      externalMetadataColumnId="Package\MOV_551\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA]"
+                      lineageId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA]" />
                     <inputColumn
-                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].Columns[REFERENCIA]"
+                      refId="Package\MOV_551\Flat File Destination.Inputs[Flat File Destination Input].Columns[REFERENCIA]"
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="REFERENCIA"
-                      externalMetadataColumnId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[REFERENCIA]"
-                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[REFERENCIA]" />
+                      externalMetadataColumnId="Package\MOV_551\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[REFERENCIA]"
+                      lineageId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].Columns[REFERENCIA]" />
                     <inputColumn
-                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].Columns[MATERIAL]"
+                      refId="Package\MOV_551\Flat File Destination.Inputs[Flat File Destination Input].Columns[MATERIAL]"
                       cachedDataType="wstr"
                       cachedLength="15"
                       cachedName="MATERIAL"
-                      externalMetadataColumnId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MATERIAL]"
-                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[MATERIAL]" />
+                      externalMetadataColumnId="Package\MOV_551\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MATERIAL]"
+                      lineageId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].Columns[MATERIAL]" />
                     <inputColumn
-                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].Columns[CENTRO]"
+                      refId="Package\MOV_551\Flat File Destination.Inputs[Flat File Destination Input].Columns[CENTRO]"
                       cachedDataType="wstr"
                       cachedLength="4"
                       cachedName="CENTRO"
-                      externalMetadataColumnId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CENTRO]"
-                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[CENTRO]" />
+                      externalMetadataColumnId="Package\MOV_551\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CENTRO]"
+                      lineageId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].Columns[CENTRO]" />
                     <inputColumn
-                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].Columns[ALMACEN]"
+                      refId="Package\MOV_551\Flat File Destination.Inputs[Flat File Destination Input].Columns[ALMACEN]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="ALMACEN"
-                      externalMetadataColumnId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ALMACEN]"
-                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[ALMACEN]" />
+                      externalMetadataColumnId="Package\MOV_551\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ALMACEN]"
+                      lineageId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].Columns[ALMACEN]" />
                     <inputColumn
-                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].Columns[MOVIMIENTO]"
+                      refId="Package\MOV_551\Flat File Destination.Inputs[Flat File Destination Input].Columns[MOVIMIENTO]"
                       cachedDataType="numeric"
                       cachedName="MOVIMIENTO"
                       cachedPrecision="11"
-                      externalMetadataColumnId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MOVIMIENTO]"
-                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[MOVIMIENTO]" />
+                      externalMetadataColumnId="Package\MOV_551\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MOVIMIENTO]"
+                      lineageId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].Columns[MOVIMIENTO]" />
                     <inputColumn
-                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].Columns[CANTIDAD]"
+                      refId="Package\MOV_551\Flat File Destination.Inputs[Flat File Destination Input].Columns[CANTIDAD]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="CANTIDAD"
-                      externalMetadataColumnId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CANTIDAD]"
-                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[CANTIDAD]" />
+                      externalMetadataColumnId="Package\MOV_551\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CANTIDAD]"
+                      lineageId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].Columns[CANTIDAD]" />
                     <inputColumn
-                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].Columns[FECHA_PROCESO]"
+                      refId="Package\MOV_551\Flat File Destination.Inputs[Flat File Destination Input].Columns[FECHA_PROCESO]"
                       cachedDataType="wstr"
                       cachedLength="4000"
                       cachedName="FECHA_PROCESO"
-                      externalMetadataColumnId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA_PROCESO]"
-                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA_PROCESO]" />
+                      externalMetadataColumnId="Package\MOV_551\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA_PROCESO]"
+                      lineageId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA_PROCESO]" />
                     <inputColumn
-                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].Columns[HORA_PROCESO]"
+                      refId="Package\MOV_551\Flat File Destination.Inputs[Flat File Destination Input].Columns[HORA_PROCESO]"
                       cachedDataType="wstr"
                       cachedLength="4000"
                       cachedName="HORA_PROCESO"
-                      externalMetadataColumnId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[HORA_PROCESO]"
-                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[HORA_PROCESO]" />
+                      externalMetadataColumnId="Package\MOV_551\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[HORA_PROCESO]"
+                      lineageId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].Columns[HORA_PROCESO]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA]"
+                      refId="Package\MOV_551\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA]"
                       dataType="wstr"
                       length="4000"
                       name="FECHA" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[REFERENCIA]"
+                      refId="Package\MOV_551\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[REFERENCIA]"
                       dataType="i8"
                       name="REFERENCIA" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MATERIAL]"
+                      refId="Package\MOV_551\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MATERIAL]"
                       dataType="wstr"
                       length="15"
                       name="MATERIAL" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CENTRO]"
+                      refId="Package\MOV_551\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CENTRO]"
                       dataType="wstr"
                       length="4"
                       name="CENTRO" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ALMACEN]"
-                      codePage="65001"
-                      dataType="str"
-                      length="4"
+                      refId="Package\MOV_551\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ALMACEN]"
+                      dataType="wstr"
+                      length="50"
                       name="ALMACEN" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MOVIMIENTO]"
+                      refId="Package\MOV_551\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MOVIMIENTO]"
                       dataType="numeric"
                       name="MOVIMIENTO"
                       precision="11" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CANTIDAD]"
-                      dataType="numeric"
-                      name="CANTIDAD"
-                      precision="38"
-                      scale="6" />
+                      refId="Package\MOV_551\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CANTIDAD]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA_PROCESO]"
+                      refId="Package\MOV_551\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA_PROCESO]"
                       dataType="wstr"
                       length="4000"
                       name="FECHA_PROCESO" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[HORA_PROCESO]"
+                      refId="Package\MOV_551\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[HORA_PROCESO]"
                       dataType="wstr"
                       length="4000"
                       name="HORA_PROCESO" />
@@ -388,7 +384,7 @@
               </inputs>
             </component>
             <component
-              refId="Package\MOV_201_202\OLE DB Source"
+              refId="Package\MOV_551\OLE DB Source"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
               description="OLE DB Source"
@@ -412,7 +408,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">exec INTERFAZ_ABM_MODELOS_FENIX 'semanal'</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">exec INTERFAZ_ROTURAS_FENIX 'semanal'</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -437,7 +433,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\MOV_201_202\OLE DB Source.Connections[OleDbConnection]"
+                  refId="Package\MOV_551\OLE DB Source.Connections[OleDbConnection]"
                   connectionManagerID="{7A0FBFB7-8486-4037-9EDF-D1730E2C35B4}:external"
                   connectionManagerRefId="Project.ConnectionManagers[ag-listenerfv.fl-0.fv.com.ar.WEBAPP.ssis_fenix 1]"
                   description="The OLE DB runtime connection used to access the database."
@@ -445,218 +441,218 @@
               </connections>
               <outputs>
                 <output
-                  refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output]"
+                  refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output]"
                   name="OLE DB Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA]"
+                      refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA]"
+                      externalMetadataColumnId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA]"
                       length="4000"
-                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA]"
+                      lineageId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA]"
                       name="FECHA"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[REFERENCIA]"
+                      refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].Columns[REFERENCIA]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[REFERENCIA]"
+                      externalMetadataColumnId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[REFERENCIA]"
                       length="10"
-                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[REFERENCIA]"
+                      lineageId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].Columns[REFERENCIA]"
                       name="REFERENCIA"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[MATERIAL]"
+                      refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].Columns[MATERIAL]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MATERIAL]"
+                      externalMetadataColumnId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MATERIAL]"
                       length="15"
-                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[MATERIAL]"
+                      lineageId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].Columns[MATERIAL]"
                       name="MATERIAL"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[CENTRO]"
+                      refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].Columns[CENTRO]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CENTRO]"
+                      externalMetadataColumnId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CENTRO]"
                       length="4"
-                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[CENTRO]"
+                      lineageId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].Columns[CENTRO]"
                       name="CENTRO"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[ALMACEN]"
+                      refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].Columns[ALMACEN]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ALMACEN]"
+                      externalMetadataColumnId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ALMACEN]"
                       length="50"
-                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[ALMACEN]"
+                      lineageId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].Columns[ALMACEN]"
                       name="ALMACEN"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[MOVIMIENTO]"
+                      refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].Columns[MOVIMIENTO]"
                       dataType="numeric"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MOVIMIENTO]"
-                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[MOVIMIENTO]"
+                      externalMetadataColumnId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MOVIMIENTO]"
+                      lineageId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].Columns[MOVIMIENTO]"
                       name="MOVIMIENTO"
                       precision="11"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[CANTIDAD]"
+                      refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].Columns[CANTIDAD]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CANTIDAD]"
+                      externalMetadataColumnId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CANTIDAD]"
                       length="50"
-                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[CANTIDAD]"
+                      lineageId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].Columns[CANTIDAD]"
                       name="CANTIDAD"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA_PROCESO]"
+                      refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA_PROCESO]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA_PROCESO]"
+                      externalMetadataColumnId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA_PROCESO]"
                       length="4000"
-                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA_PROCESO]"
+                      lineageId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA_PROCESO]"
                       name="FECHA_PROCESO"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[HORA_PROCESO]"
+                      refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].Columns[HORA_PROCESO]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[HORA_PROCESO]"
+                      externalMetadataColumnId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[HORA_PROCESO]"
                       length="4000"
-                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].Columns[HORA_PROCESO]"
+                      lineageId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].Columns[HORA_PROCESO]"
                       name="HORA_PROCESO"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA]"
+                      refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA]"
                       dataType="wstr"
                       length="4000"
                       name="FECHA" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[REFERENCIA]"
+                      refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[REFERENCIA]"
                       dataType="wstr"
                       length="10"
                       name="REFERENCIA" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MATERIAL]"
+                      refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MATERIAL]"
                       dataType="wstr"
                       length="15"
                       name="MATERIAL" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CENTRO]"
+                      refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CENTRO]"
                       dataType="wstr"
                       length="4"
                       name="CENTRO" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ALMACEN]"
+                      refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ALMACEN]"
                       dataType="wstr"
                       length="50"
                       name="ALMACEN" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MOVIMIENTO]"
+                      refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MOVIMIENTO]"
                       dataType="numeric"
                       name="MOVIMIENTO"
                       precision="11" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CANTIDAD]"
+                      refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CANTIDAD]"
                       dataType="wstr"
                       length="50"
                       name="CANTIDAD" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA_PROCESO]"
+                      refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA_PROCESO]"
                       dataType="wstr"
                       length="4000"
                       name="FECHA_PROCESO" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[HORA_PROCESO]"
+                      refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[HORA_PROCESO]"
                       dataType="wstr"
                       length="4000"
                       name="HORA_PROCESO" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Error Output]"
                   isErrorOut="true"
                   name="OLE DB Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA]"
+                      refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA]"
                       dataType="wstr"
                       length="4000"
-                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA]"
+                      lineageId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA]"
                       name="FECHA" />
                     <outputColumn
-                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[REFERENCIA]"
+                      refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[REFERENCIA]"
                       dataType="wstr"
                       length="10"
-                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[REFERENCIA]"
+                      lineageId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[REFERENCIA]"
                       name="REFERENCIA" />
                     <outputColumn
-                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MATERIAL]"
+                      refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MATERIAL]"
                       dataType="wstr"
                       length="15"
-                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MATERIAL]"
+                      lineageId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MATERIAL]"
                       name="MATERIAL" />
                     <outputColumn
-                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CENTRO]"
+                      refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CENTRO]"
                       dataType="wstr"
                       length="4"
-                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CENTRO]"
+                      lineageId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CENTRO]"
                       name="CENTRO" />
                     <outputColumn
-                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ALMACEN]"
+                      refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ALMACEN]"
                       dataType="wstr"
                       length="50"
-                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ALMACEN]"
+                      lineageId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ALMACEN]"
                       name="ALMACEN" />
                     <outputColumn
-                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MOVIMIENTO]"
+                      refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MOVIMIENTO]"
                       dataType="numeric"
-                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MOVIMIENTO]"
+                      lineageId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MOVIMIENTO]"
                       name="MOVIMIENTO"
                       precision="11" />
                     <outputColumn
-                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CANTIDAD]"
+                      refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CANTIDAD]"
                       dataType="wstr"
                       length="50"
-                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CANTIDAD]"
+                      lineageId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CANTIDAD]"
                       name="CANTIDAD" />
                     <outputColumn
-                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA_PROCESO]"
+                      refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA_PROCESO]"
                       dataType="wstr"
                       length="4000"
-                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA_PROCESO]"
+                      lineageId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA_PROCESO]"
                       name="FECHA_PROCESO" />
                     <outputColumn
-                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[HORA_PROCESO]"
+                      refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[HORA_PROCESO]"
                       dataType="wstr"
                       length="4000"
-                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[HORA_PROCESO]"
+                      lineageId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[HORA_PROCESO]"
                       name="HORA_PROCESO" />
                     <outputColumn
-                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -667,22 +663,22 @@
           </components>
           <paths>
             <path
-              refId="Package\MOV_201_202.Paths[OLE DB Source Output]"
-              endId="Package\MOV_201_202\Flat File Destination.Inputs[Flat File Destination Input]"
+              refId="Package\MOV_551.Paths[OLE DB Source Output]"
+              endId="Package\MOV_551\Flat File Destination.Inputs[Flat File Destination Input]"
               name="OLE DB Source Output"
-              startId="Package\MOV_201_202\OLE DB Source.Outputs[OLE DB Source Output]" />
+              startId="Package\MOV_551\OLE DB Source.Outputs[OLE DB Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\MOV_201_202 local"
+      DTS:refId="Package\MOV_551 1"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{91716639-7748-4e59-8f9b-6a00c2e7dc89}"
+      DTS:DTSID="{4b0f155e-66bf-40d7-a05f-1f765ce9cebf}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="MOV_201_202 local"
+      DTS:ObjectName="MOV_551 1"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -690,7 +686,7 @@
           version="1">
           <components>
             <component
-              refId="Package\MOV_201_202 local\Flat File Destination"
+              refId="Package\MOV_551 1\Flat File Destination"
               componentClassID="Microsoft.FlatFileDestination"
               contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Destination"
@@ -714,126 +710,124 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\MOV_201_202 local\Flat File Destination.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[abm_modelos_fenix.csv 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[abm_modelos_fenix.csv 1]"
+                  refId="Package\MOV_551 1\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[rotura_fenix.csv 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[rotura_fenix.csv 1]"
                   name="FlatFileConnection" />
               </connections>
               <inputs>
                 <input
-                  refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input]"
+                  refId="Package\MOV_551 1\Flat File Destination.Inputs[Flat File Destination Input]"
                   hasSideEffects="true"
                   name="Flat File Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].Columns[FECHA]"
+                      refId="Package\MOV_551 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[FECHA]"
                       cachedDataType="wstr"
                       cachedLength="4000"
                       cachedName="FECHA"
-                      externalMetadataColumnId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA]"
-                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA]" />
+                      externalMetadataColumnId="Package\MOV_551 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA]"
+                      lineageId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA]" />
                     <inputColumn
-                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].Columns[REFERENCIA]"
+                      refId="Package\MOV_551 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[REFERENCIA]"
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="REFERENCIA"
-                      externalMetadataColumnId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[REFERENCIA]"
-                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[REFERENCIA]" />
+                      externalMetadataColumnId="Package\MOV_551 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[REFERENCIA]"
+                      lineageId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[REFERENCIA]" />
                     <inputColumn
-                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].Columns[MATERIAL]"
+                      refId="Package\MOV_551 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[MATERIAL]"
                       cachedDataType="wstr"
                       cachedLength="15"
                       cachedName="MATERIAL"
-                      externalMetadataColumnId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MATERIAL]"
-                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[MATERIAL]" />
+                      externalMetadataColumnId="Package\MOV_551 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MATERIAL]"
+                      lineageId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[MATERIAL]" />
                     <inputColumn
-                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].Columns[CENTRO]"
+                      refId="Package\MOV_551 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[CENTRO]"
                       cachedDataType="wstr"
                       cachedLength="4"
                       cachedName="CENTRO"
-                      externalMetadataColumnId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CENTRO]"
-                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[CENTRO]" />
+                      externalMetadataColumnId="Package\MOV_551 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CENTRO]"
+                      lineageId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[CENTRO]" />
                     <inputColumn
-                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].Columns[ALMACEN]"
+                      refId="Package\MOV_551 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[ALMACEN]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="ALMACEN"
-                      externalMetadataColumnId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ALMACEN]"
-                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[ALMACEN]" />
+                      externalMetadataColumnId="Package\MOV_551 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ALMACEN]"
+                      lineageId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[ALMACEN]" />
                     <inputColumn
-                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].Columns[MOVIMIENTO]"
+                      refId="Package\MOV_551 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[MOVIMIENTO]"
                       cachedDataType="numeric"
                       cachedName="MOVIMIENTO"
                       cachedPrecision="11"
-                      externalMetadataColumnId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MOVIMIENTO]"
-                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[MOVIMIENTO]" />
+                      externalMetadataColumnId="Package\MOV_551 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MOVIMIENTO]"
+                      lineageId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[MOVIMIENTO]" />
                     <inputColumn
-                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].Columns[CANTIDAD]"
+                      refId="Package\MOV_551 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[CANTIDAD]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="CANTIDAD"
-                      externalMetadataColumnId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CANTIDAD]"
-                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[CANTIDAD]" />
+                      externalMetadataColumnId="Package\MOV_551 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CANTIDAD]"
+                      lineageId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[CANTIDAD]" />
                     <inputColumn
-                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].Columns[FECHA_PROCESO]"
+                      refId="Package\MOV_551 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[FECHA_PROCESO]"
                       cachedDataType="wstr"
                       cachedLength="4000"
                       cachedName="FECHA_PROCESO"
-                      externalMetadataColumnId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA_PROCESO]"
-                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA_PROCESO]" />
+                      externalMetadataColumnId="Package\MOV_551 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA_PROCESO]"
+                      lineageId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA_PROCESO]" />
                     <inputColumn
-                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].Columns[HORA_PROCESO]"
+                      refId="Package\MOV_551 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[HORA_PROCESO]"
                       cachedDataType="wstr"
                       cachedLength="4000"
                       cachedName="HORA_PROCESO"
-                      externalMetadataColumnId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[HORA_PROCESO]"
-                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[HORA_PROCESO]" />
+                      externalMetadataColumnId="Package\MOV_551 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[HORA_PROCESO]"
+                      lineageId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[HORA_PROCESO]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA]"
+                      refId="Package\MOV_551 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA]"
                       dataType="wstr"
                       length="4000"
                       name="FECHA" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[REFERENCIA]"
+                      refId="Package\MOV_551 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[REFERENCIA]"
                       dataType="i8"
                       name="REFERENCIA" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MATERIAL]"
+                      refId="Package\MOV_551 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MATERIAL]"
                       dataType="wstr"
                       length="15"
                       name="MATERIAL" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CENTRO]"
+                      refId="Package\MOV_551 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CENTRO]"
                       dataType="wstr"
                       length="4"
                       name="CENTRO" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ALMACEN]"
-                      codePage="65001"
-                      dataType="str"
-                      length="4"
+                      refId="Package\MOV_551 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ALMACEN]"
+                      dataType="wstr"
+                      length="50"
                       name="ALMACEN" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MOVIMIENTO]"
+                      refId="Package\MOV_551 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MOVIMIENTO]"
                       dataType="numeric"
                       name="MOVIMIENTO"
                       precision="11" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CANTIDAD]"
-                      dataType="numeric"
-                      name="CANTIDAD"
-                      precision="38"
-                      scale="6" />
+                      refId="Package\MOV_551 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CANTIDAD]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA_PROCESO]"
+                      refId="Package\MOV_551 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FECHA_PROCESO]"
                       dataType="wstr"
                       length="4000"
                       name="FECHA_PROCESO" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[HORA_PROCESO]"
+                      refId="Package\MOV_551 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[HORA_PROCESO]"
                       dataType="wstr"
                       length="4000"
                       name="HORA_PROCESO" />
@@ -842,7 +836,7 @@
               </inputs>
             </component>
             <component
-              refId="Package\MOV_201_202 local\OLE DB Source"
+              refId="Package\MOV_551 1\OLE DB Source"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
               description="OLE DB Source"
@@ -866,7 +860,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">exec INTERFAZ_ABM_MODELOS_FENIX 'semanal'</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">exec INTERFAZ_ROTURAS_FENIX 'semanal'</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -891,7 +885,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\MOV_201_202 local\OLE DB Source.Connections[OleDbConnection]"
+                  refId="Package\MOV_551 1\OLE DB Source.Connections[OleDbConnection]"
                   connectionManagerID="{7A0FBFB7-8486-4037-9EDF-D1730E2C35B4}:external"
                   connectionManagerRefId="Project.ConnectionManagers[ag-listenerfv.fl-0.fv.com.ar.WEBAPP.ssis_fenix 1]"
                   description="The OLE DB runtime connection used to access the database."
@@ -899,218 +893,218 @@
               </connections>
               <outputs>
                 <output
-                  refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output]"
+                  refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output]"
                   name="OLE DB Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA]"
+                      refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA]"
+                      externalMetadataColumnId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA]"
                       length="4000"
-                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA]"
+                      lineageId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA]"
                       name="FECHA"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[REFERENCIA]"
+                      refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[REFERENCIA]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[REFERENCIA]"
+                      externalMetadataColumnId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[REFERENCIA]"
                       length="10"
-                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[REFERENCIA]"
+                      lineageId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[REFERENCIA]"
                       name="REFERENCIA"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[MATERIAL]"
+                      refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[MATERIAL]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MATERIAL]"
+                      externalMetadataColumnId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MATERIAL]"
                       length="15"
-                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[MATERIAL]"
+                      lineageId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[MATERIAL]"
                       name="MATERIAL"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[CENTRO]"
+                      refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[CENTRO]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CENTRO]"
+                      externalMetadataColumnId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CENTRO]"
                       length="4"
-                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[CENTRO]"
+                      lineageId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[CENTRO]"
                       name="CENTRO"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[ALMACEN]"
+                      refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[ALMACEN]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ALMACEN]"
+                      externalMetadataColumnId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ALMACEN]"
                       length="50"
-                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[ALMACEN]"
+                      lineageId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[ALMACEN]"
                       name="ALMACEN"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[MOVIMIENTO]"
+                      refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[MOVIMIENTO]"
                       dataType="numeric"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MOVIMIENTO]"
-                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[MOVIMIENTO]"
+                      externalMetadataColumnId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MOVIMIENTO]"
+                      lineageId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[MOVIMIENTO]"
                       name="MOVIMIENTO"
                       precision="11"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[CANTIDAD]"
+                      refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[CANTIDAD]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CANTIDAD]"
+                      externalMetadataColumnId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CANTIDAD]"
                       length="50"
-                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[CANTIDAD]"
+                      lineageId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[CANTIDAD]"
                       name="CANTIDAD"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA_PROCESO]"
+                      refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA_PROCESO]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA_PROCESO]"
+                      externalMetadataColumnId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA_PROCESO]"
                       length="4000"
-                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA_PROCESO]"
+                      lineageId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[FECHA_PROCESO]"
                       name="FECHA_PROCESO"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[HORA_PROCESO]"
+                      refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[HORA_PROCESO]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[HORA_PROCESO]"
+                      externalMetadataColumnId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[HORA_PROCESO]"
                       length="4000"
-                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].Columns[HORA_PROCESO]"
+                      lineageId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[HORA_PROCESO]"
                       name="HORA_PROCESO"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA]"
+                      refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA]"
                       dataType="wstr"
                       length="4000"
                       name="FECHA" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[REFERENCIA]"
+                      refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[REFERENCIA]"
                       dataType="wstr"
                       length="10"
                       name="REFERENCIA" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MATERIAL]"
+                      refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MATERIAL]"
                       dataType="wstr"
                       length="15"
                       name="MATERIAL" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CENTRO]"
+                      refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CENTRO]"
                       dataType="wstr"
                       length="4"
                       name="CENTRO" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ALMACEN]"
+                      refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ALMACEN]"
                       dataType="wstr"
                       length="50"
                       name="ALMACEN" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MOVIMIENTO]"
+                      refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MOVIMIENTO]"
                       dataType="numeric"
                       name="MOVIMIENTO"
                       precision="11" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CANTIDAD]"
+                      refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CANTIDAD]"
                       dataType="wstr"
                       length="50"
                       name="CANTIDAD" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA_PROCESO]"
+                      refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FECHA_PROCESO]"
                       dataType="wstr"
                       length="4000"
                       name="FECHA_PROCESO" />
                     <externalMetadataColumn
-                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[HORA_PROCESO]"
+                      refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[HORA_PROCESO]"
                       dataType="wstr"
                       length="4000"
                       name="HORA_PROCESO" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Error Output]"
                   isErrorOut="true"
                   name="OLE DB Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA]"
+                      refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA]"
                       dataType="wstr"
                       length="4000"
-                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA]"
+                      lineageId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA]"
                       name="FECHA" />
                     <outputColumn
-                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[REFERENCIA]"
+                      refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[REFERENCIA]"
                       dataType="wstr"
                       length="10"
-                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[REFERENCIA]"
+                      lineageId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[REFERENCIA]"
                       name="REFERENCIA" />
                     <outputColumn
-                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MATERIAL]"
+                      refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MATERIAL]"
                       dataType="wstr"
                       length="15"
-                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MATERIAL]"
+                      lineageId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MATERIAL]"
                       name="MATERIAL" />
                     <outputColumn
-                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CENTRO]"
+                      refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CENTRO]"
                       dataType="wstr"
                       length="4"
-                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CENTRO]"
+                      lineageId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CENTRO]"
                       name="CENTRO" />
                     <outputColumn
-                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ALMACEN]"
+                      refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ALMACEN]"
                       dataType="wstr"
                       length="50"
-                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ALMACEN]"
+                      lineageId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ALMACEN]"
                       name="ALMACEN" />
                     <outputColumn
-                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MOVIMIENTO]"
+                      refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MOVIMIENTO]"
                       dataType="numeric"
-                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MOVIMIENTO]"
+                      lineageId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MOVIMIENTO]"
                       name="MOVIMIENTO"
                       precision="11" />
                     <outputColumn
-                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CANTIDAD]"
+                      refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CANTIDAD]"
                       dataType="wstr"
                       length="50"
-                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CANTIDAD]"
+                      lineageId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CANTIDAD]"
                       name="CANTIDAD" />
                     <outputColumn
-                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA_PROCESO]"
+                      refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA_PROCESO]"
                       dataType="wstr"
                       length="4000"
-                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA_PROCESO]"
+                      lineageId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FECHA_PROCESO]"
                       name="FECHA_PROCESO" />
                     <outputColumn
-                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[HORA_PROCESO]"
+                      refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[HORA_PROCESO]"
                       dataType="wstr"
                       length="4000"
-                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[HORA_PROCESO]"
+                      lineageId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[HORA_PROCESO]"
                       name="HORA_PROCESO" />
                     <outputColumn
-                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1121,10 +1115,10 @@
           </components>
           <paths>
             <path
-              refId="Package\MOV_201_202 local.Paths[OLE DB Source Output]"
-              endId="Package\MOV_201_202 local\Flat File Destination.Inputs[Flat File Destination Input]"
+              refId="Package\MOV_551 1.Paths[OLE DB Source Output]"
+              endId="Package\MOV_551 1\Flat File Destination.Inputs[Flat File Destination Input]"
               name="OLE DB Source Output"
-              startId="Package\MOV_201_202 local\OLE DB Source.Outputs[OLE DB Source Output]" />
+              startId="Package\MOV_551 1\OLE DB Source.Outputs[OLE DB Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -1134,11 +1128,11 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{73D376FB-AB19-4BEE-9B2F-7631351CE553}"
-      DTS:From="Package\MOV_201_202"
+      DTS:DTSID="{46B23024-AC32-48C1-9055-A4F4136FA055}"
+      DTS:From="Package\MOV_551"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
-      DTS:To="Package\MOV_201_202 local" />
+      DTS:To="Package\MOV_551 1" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -1153,39 +1147,27 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="153.333333333334,42"
-          Id="Package\MOV_201_202"
-          TopLeft="364,119" />
+          Size="128,42"
+          Id="Package\MOV_551"
+          TopLeft="351,91" />
         <NodeLayout
-          Size="178.666666666667,42"
-          Id="Package\MOV_201_202 local"
-          TopLeft="364,221" />
+          Size="136,42.6666666666667"
+          Id="Package\MOV_551 1"
+          TopLeft="351,193" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="440.5,161">
+          TopLeft="417,133">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="13,60"
+              EndConnector="0,60"
               Start="0,0"
-              End="13,52.5">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,26"
-                    Point2="0,30"
-                    Point3="4,30" />
-                  <mssgle:LineSegment
-                    End="9,30" />
-                  <mssgle:CubicBezierSegment
-                    Point1="9,30"
-                    Point2="13,30"
-                    Point3="13,34" />
-                  <mssgle:LineSegment
-                    End="13,52.5" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1198,44 +1180,44 @@
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\MOV_201_202">
+    design-time-name="Package\MOV_551">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="157.333333333334,42"
-          Id="Package\MOV_201_202\OLE DB Source"
-          TopLeft="209,112" />
+          Size="157.333333333334,50"
+          Id="Package\MOV_551\OLE DB Source"
+          TopLeft="101.000004172325,65.2631571091443" />
         <NodeLayout
           Size="176,42"
-          Id="Package\MOV_201_202\Flat File Destination"
-          TopLeft="489,149" />
+          Id="Package\MOV_551\Flat File Destination"
+          TopLeft="405.750003967434,83.9999995106145" />
         <EdgeLayout
-          Id="Package\MOV_201_202.Paths[OLE DB Source Output]"
-          TopLeft="366,133">
+          Id="Package\MOV_551.Paths[OLE DB Source Output]"
+          TopLeft="258.333337505658,90.2631571091443">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="123,37"
+              EndConnector="147.416666461776,14.7368424014702"
               Start="0,0"
-              End="115.5,37">
+              End="139.916666461776,14.7368424014702">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="57.5,0" />
+                    End="69.7083332308879,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="57.5,0"
-                    Point2="61.5,0"
-                    Point3="61.5,4" />
+                    Point1="69.7083332308879,0"
+                    Point2="73.7083332308879,0"
+                    Point3="73.7083332308879,4" />
                   <mssgle:LineSegment
-                    End="61.5,33" />
+                    End="73.7083332308879,10.7368424014702" />
                   <mssgle:CubicBezierSegment
-                    Point1="61.5,33"
-                    Point2="61.5,37"
-                    Point3="65.5,37" />
+                    Point1="73.7083332308879,10.7368424014702"
+                    Point2="73.7083332308879,14.7368424014702"
+                    Point3="77.7083332308879,14.7368424014702" />
                   <mssgle:LineSegment
-                    End="115.5,37" />
+                    End="139.916666461776,14.7368424014702" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1248,7 +1230,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\MOV_201_202\OLE DB Source">
+    design-time-name="Package\MOV_551\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1256,44 +1238,32 @@
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\MOV_201_202 local">
+    design-time-name="Package\MOV_551 1">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="157.333333333334,42"
-          Id="Package\MOV_201_202 local\OLE DB Source"
-          TopLeft="209,112" />
+          Id="Package\MOV_551 1\OLE DB Source"
+          TopLeft="381,107" />
         <NodeLayout
           Size="176,42"
-          Id="Package\MOV_201_202 local\Flat File Destination"
-          TopLeft="489,149" />
+          Id="Package\MOV_551 1\Flat File Destination"
+          TopLeft="672,110" />
         <EdgeLayout
-          Id="Package\MOV_201_202 local.Paths[OLE DB Source Output]"
-          TopLeft="366,133">
+          Id="Package\MOV_551 1.Paths[OLE DB Source Output]"
+          TopLeft="538,129.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="123,37"
+              EndConnector="134,0"
               Start="0,0"
-              End="115.5,37">
+              End="126.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="57.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="57.5,0"
-                    Point2="61.5,0"
-                    Point3="61.5,4" />
-                  <mssgle:LineSegment
-                    End="61.5,33" />
-                  <mssgle:CubicBezierSegment
-                    Point1="61.5,33"
-                    Point2="61.5,37"
-                    Point3="65.5,37" />
-                  <mssgle:LineSegment
-                    End="115.5,37" />
+                    End="126.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1306,7 +1276,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\MOV_201_202 local\OLE DB Source">
+    design-time-name="Package\MOV_551 1\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

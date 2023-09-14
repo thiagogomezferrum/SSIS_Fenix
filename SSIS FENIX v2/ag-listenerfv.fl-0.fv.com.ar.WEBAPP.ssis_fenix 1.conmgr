@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="ag-listenerfv.fl-0.fv.com.ar.WEBAPP.ssis_fenix 1"
+  DTS:DTSID="{7A0FBFB7-8486-4037-9EDF-D1730E2C35B4}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=ag-listenerfv.fl-0.fv.com.ar;User ID=ssis_fenix;Initial Catalog=WEBAPP;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-SSIS FENIX-{7A0FBFB7-8486-4037-9EDF-D1730E2C35B4}ag-listenerfv.fl-0.fv.com.ar.WEBAPP.ssis_fenix;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAALUq5K1h3I0KtdgjXNSJx2gAAAAACAAAAAAADZgAAwAAAABAAAAB6GEtMmWRFFoNnWkDEtj7aAAAAAASAAACgAAAAEAAAAIOG9KY1uBkSwd8FG1Ftreh4AAAAajbqmHkIgSIXTj8gi/QE7/XWCEpMkARPmHbIixXOjEDXpGQmW86DcV690V5A2kvGksvrc+I+jWUjK/1yg9Hto64ia+unYdNZLoFKBLIkGzWW+34wpoWuerxWWhq28op1gsLH8JoMD7HtMQHl36A437g4pBXOdYlSFAAAAGLoErCD37ISYaxe71iK2h0WTy+b</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

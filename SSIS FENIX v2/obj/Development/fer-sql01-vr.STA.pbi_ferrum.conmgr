@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="fer-sql01-vr.STA.pbi_ferrum"
+  DTS:DTSID="{CCB5EA22-E1A1-43A3-A9BF-092351FCA7B5}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=fer-sql01-vr;User ID=pbi_ferrum;Initial Catalog=STA;Provider=SQLNCLI11.1;Persist Security Info=True;Application Name=SSIS-SSIS FENIX-{CCB5EA22-E1A1-43A3-A9BF-092351FCA7B5}fer-sql01-vr.STA.pbi_ferrum;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAALUq5K1h3I0KtdgjXNSJx2gAAAAACAAAAAAADZgAAwAAAABAAAAArg0b5olMp5NDL3XqiSNNbAAAAAASAAACgAAAAEAAAAMh6U9mUi1daDo3waoWw8xKAAAAAM4Df0b7iC04OiXkxUQ5anyHfmKqkx3amcwCdmnzvuCf+Em1NfnBwPICljrQutH76AP88jWgmMmH63is10A5vkgrUKxFu9UnHLOmC6ZG9i8WtgiInOMebRHcDd24IRUbtpba9qjOgOFFvESNApVAa+QHHTDfQtmpZdmHGjbeDAjIUAAAAcGgEoX7PwnEbzRDQOZgqJ/DcUww=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

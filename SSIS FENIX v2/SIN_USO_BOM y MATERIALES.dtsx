@@ -1,0 +1,2042 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/11/2022 11:44:57 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="FE-PCONNON"
+  DTS:CreatorName="FERRUM\pconnon"
+  DTS:DTSID="{7E3749C7-7365-4CD1-BBF9-C10FD5B6A972}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5035.3"
+  DTS:LocaleID="11274"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="31"
+  DTS:VersionGUID="{EE771E85-7899-491C-AEE8-E52230E9CC6A}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[mm_materiales]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{E413D838-7ABA-4CC0-91DA-AB8369B7DFA0}"
+      DTS:ObjectName="mm_materiales">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="11274"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="\\sapfs.grupofv.com\FERRUM-DW\PRD\APROCESAR\mm_materiales.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA CREACIÓN"
+              DTS:DTSID="{7826B3A0-DBF8-443A-B49D-E277B4FD986F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA MODIFICACIÓN"
+              DTS:DTSID="{C2750E3F-5ADB-48AA-BDA4-912F0966BE3B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CODIGO DE MATERIAL"
+              DTS:DTSID="{7405A367-9633-416D-A681-1916D0A6B28F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DENOMINACION"
+              DTS:DTSID="{ED59BE43-15B0-4CE0-A0C6-6EBE9C6125E9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="STOCK DE SEGURIDAD"
+              DTS:DTSID="{1A50D95F-55D2-44E1-9AB5-A7E4ACD1726E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PUNTO DE PEDIDO 1"
+              DTS:DTSID="{7F729964-1253-405F-A5F5-5C3F8797E83F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GRUPO DE ARTICULO"
+              DTS:DTSID="{FAA29197-327C-47DE-A496-079F07D51A66}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DENOMINACION GRUPO ARTICULO"
+              DTS:DTSID="{0A092ABD-34A4-4D04-A650-09AE1DACB808}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PLAZO EM PREVISTO"
+              DTS:DTSID="{0FE4F46C-B760-41A3-86B4-737451D308E9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UMB"
+              DTS:DTSID="{3BD2B2CB-DFB7-4A1C-B94A-DB6AE1E4E617}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PETICION DE BORRADO MTE"
+              DTS:DTSID="{762219E2-0BC3-487D-ADFD-B07D4D2140D4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="STATUS DE MATERIAL"
+              DTS:DTSID="{DE566283-719A-4295-BEB0-2BB90AE5FC31}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CENTRO"
+              DTS:DTSID="{492B9AF5-781F-4C28-B9B0-DA702548C643}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PETICION DE BORRADO CENTRO"
+              DTS:DTSID="{9FF90D65-F69D-42EC-A7A9-0292EAAED149}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TIPO DE MATERIAL"
+              DTS:DTSID="{979CC8BC-7EF3-455D-AE80-82013AC2EF71}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GRUPO DE COMPRAS"
+              DTS:DTSID="{4F9D08E3-0E6E-425A-AE60-99AC25A463C6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PLANIFICADOR DE NEC "
+              DTS:DTSID="{D1579AA6-5BF1-43D7-B86C-6697D29258EE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TIPO MRP"
+              DTS:DTSID="{806FC678-AA69-4D54-A447-FF019BFD7FB6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PUNTO DE PEDIDO 2"
+              DTS:DTSID="{F4850D98-E4C2-45C0-A472-ECE2147FC0F3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CALCULO TAMAÑO LOTE"
+              DTS:DTSID="{1986F3AD-3908-40C2-82D2-9268105AFFEC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="INDICADOR ABC"
+              DTS:DTSID="{DE1B30CA-78D8-4CC4-9957-C1AD5B8EC074}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TAMAÑO LOTE MINIMO"
+              DTS:DTSID="{9B0E222A-CCC2-4A74-A648-0989A550B26D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VALOR REDONDEO"
+              DTS:DTSID="{BDE82F26-46D7-46EB-99E4-2616499C82C4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TIEMPO TRAT EM"
+              DTS:DTSID="{05F1C6F9-543F-4C22-A397-CE5C1D278E63}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PERFIL DE COBERTURA"
+              DTS:DTSID="{E7A5706C-8889-4770-854A-36D218C0C1C9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="INVENTARIO CICLICO"
+              DTS:DTSID="{03708889-174E-41F0-B5B7-D4E13114FC42}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AUTO MATERIAL QM"
+              DTS:DTSID="{2BD30F8A-AC7E-4B5E-B6C9-9606866923D6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MATERIAL ANTERIOR"
+              DTS:DTSID="{203284CA-30E2-46C8-A8D0-261C5B4DBB51}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="JERARQUIA"
+              DTS:DTSID="{2B834B8F-9C7B-4D92-8FBD-D52C8E65898E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GRUPO MATERIAL 1"
+              DTS:DTSID="{E30DE2B6-49E3-440C-B4B6-6935A831F6CA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GRUPO MATERIAL 2"
+              DTS:DTSID="{AE061F34-31F4-4E08-8EE7-36C8EE687B9D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GRUPO MATERIAL 3"
+              DTS:DTSID="{68DE3D7D-983B-466E-A56D-C90575DFB406}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PESO NETO"
+              DTS:DTSID="{D43A7791-5F3E-4DDB-9DA3-B80A874ED153}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PESO BRUTO"
+              DTS:DTSID="{52DD51EB-E100-4021-9280-372455500578}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UNIDAD PESO"
+              DTS:DTSID="{1A474662-D8C7-4527-8BF1-AE622E2FC225}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VOLUMEN"
+              DTS:DTSID="{C59FC6F6-C757-4EFC-A9D4-7B0C56DD08D4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UNIDAD VOLUMEN"
+              DTS:DTSID="{DD5F0E32-2DFB-423F-B931-528C584B9B78}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DIMENSION"
+              DTS:DTSID="{11EE1D57-FECE-4A42-9B30-A946B4DAC3EE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ESTADO CADENA DIST"
+              DTS:DTSID="{61DDB384-AF79-4415-B01F-CEF6C0056F10}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NÚMERO EAN"
+              DTS:DTSID="{653FD242-FA93-4821-B860-FE8062FF2B3F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CATEGORIA DE VALORACIÓN"
+              DTS:DTSID="{F99DA9AB-1C88-43D1-ACF5-77B125880B63}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CENTRO DE BENEFICIO"
+              DTS:DTSID="{449D847C-49D9-4754-9C2E-2ADA6CE00892}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[pp_bom]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{687C2267-AD6A-4832-929B-E306BD42337B}"
+      DTS:ObjectName="pp_bom">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="11274"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="\\sapfs.grupofv.com\FERRUM-DW\PRD\APROCESAR\mm_materiales.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CODIGO MATERIAL"
+              DTS:DTSID="{4F60787B-A97C-47D3-B761-30D8A6C474E2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CENTRO"
+              DTS:DTSID="{93A410F0-4C87-460E-A9FB-DC284147AA63}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ALTERNATIVA"
+              DTS:DTSID="{02158B2D-0514-4681-B7D2-87A35574430A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="POSICION"
+              DTS:DTSID="{FA38E4DE-99D6-4707-9EFB-A58ABA1AA432}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CANTIDAD BASE"
+              DTS:DTSID="{1E788B60-3D99-437D-A637-2A71417AE9C0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="COMPONENTE"
+              DTS:DTSID="{07C51AD8-DBF7-4206-8BA5-241342C3BC81}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CANTIDAD COMPONENTE"
+              DTS:DTSID="{CBC4E506-237A-4E60-9350-6485EAE92C70}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UM COMPONENTE"
+              DTS:DTSID="{E1A8C849-43E2-428A-9C15-B766C12C50B9}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\BOM"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{10496312-2631-4F35-98C2-1BDA8B209B02}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="BOM"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\BOM\bom"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="11274"
+              name="bom"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\BOM\bom.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[pp_bom]"
+                  connectionManagerRefId="Package.ConnectionManagers[pp_bom]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\BOM\bom.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\BOM\bom.Outputs[Flat File Source Output].Columns[CODIGO MATERIAL]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\BOM\bom.Outputs[Flat File Source Output].ExternalColumns[CODIGO MATERIAL]"
+                      length="50"
+                      lineageId="Package\BOM\bom.Outputs[Flat File Source Output].Columns[CODIGO MATERIAL]"
+                      name="CODIGO MATERIAL"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\BOM\bom.Outputs[Flat File Source Output].Columns[CENTRO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\BOM\bom.Outputs[Flat File Source Output].ExternalColumns[CENTRO]"
+                      length="50"
+                      lineageId="Package\BOM\bom.Outputs[Flat File Source Output].Columns[CENTRO]"
+                      name="CENTRO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\BOM\bom.Outputs[Flat File Source Output].Columns[ALTERNATIVA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\BOM\bom.Outputs[Flat File Source Output].ExternalColumns[ALTERNATIVA]"
+                      length="50"
+                      lineageId="Package\BOM\bom.Outputs[Flat File Source Output].Columns[ALTERNATIVA]"
+                      name="ALTERNATIVA"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\BOM\bom.Outputs[Flat File Source Output].Columns[POSICION]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\BOM\bom.Outputs[Flat File Source Output].ExternalColumns[POSICION]"
+                      length="50"
+                      lineageId="Package\BOM\bom.Outputs[Flat File Source Output].Columns[POSICION]"
+                      name="POSICION"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\BOM\bom.Outputs[Flat File Source Output].Columns[CANTIDAD BASE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\BOM\bom.Outputs[Flat File Source Output].ExternalColumns[CANTIDAD BASE]"
+                      length="50"
+                      lineageId="Package\BOM\bom.Outputs[Flat File Source Output].Columns[CANTIDAD BASE]"
+                      name="CANTIDAD BASE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\BOM\bom.Outputs[Flat File Source Output].Columns[COMPONENTE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\BOM\bom.Outputs[Flat File Source Output].ExternalColumns[COMPONENTE]"
+                      length="50"
+                      lineageId="Package\BOM\bom.Outputs[Flat File Source Output].Columns[COMPONENTE]"
+                      name="COMPONENTE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\BOM\bom.Outputs[Flat File Source Output].Columns[CANTIDAD COMPONENTE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\BOM\bom.Outputs[Flat File Source Output].ExternalColumns[CANTIDAD COMPONENTE]"
+                      length="50"
+                      lineageId="Package\BOM\bom.Outputs[Flat File Source Output].Columns[CANTIDAD COMPONENTE]"
+                      name="CANTIDAD COMPONENTE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\BOM\bom.Outputs[Flat File Source Output].Columns[UM COMPONENTE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\BOM\bom.Outputs[Flat File Source Output].ExternalColumns[UM COMPONENTE]"
+                      length="50"
+                      lineageId="Package\BOM\bom.Outputs[Flat File Source Output].Columns[UM COMPONENTE]"
+                      name="UM COMPONENTE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\BOM\bom.Outputs[Flat File Source Output].ExternalColumns[CODIGO MATERIAL]"
+                      dataType="wstr"
+                      length="50"
+                      name="CODIGO MATERIAL" />
+                    <externalMetadataColumn
+                      refId="Package\BOM\bom.Outputs[Flat File Source Output].ExternalColumns[CENTRO]"
+                      dataType="wstr"
+                      length="50"
+                      name="CENTRO" />
+                    <externalMetadataColumn
+                      refId="Package\BOM\bom.Outputs[Flat File Source Output].ExternalColumns[ALTERNATIVA]"
+                      dataType="wstr"
+                      length="50"
+                      name="ALTERNATIVA" />
+                    <externalMetadataColumn
+                      refId="Package\BOM\bom.Outputs[Flat File Source Output].ExternalColumns[POSICION]"
+                      dataType="wstr"
+                      length="50"
+                      name="POSICION" />
+                    <externalMetadataColumn
+                      refId="Package\BOM\bom.Outputs[Flat File Source Output].ExternalColumns[CANTIDAD BASE]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD BASE" />
+                    <externalMetadataColumn
+                      refId="Package\BOM\bom.Outputs[Flat File Source Output].ExternalColumns[COMPONENTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="COMPONENTE" />
+                    <externalMetadataColumn
+                      refId="Package\BOM\bom.Outputs[Flat File Source Output].ExternalColumns[CANTIDAD COMPONENTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD COMPONENTE" />
+                    <externalMetadataColumn
+                      refId="Package\BOM\bom.Outputs[Flat File Source Output].ExternalColumns[UM COMPONENTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="UM COMPONENTE" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\BOM\bom.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\BOM\bom.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\BOM\bom.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\BOM\bom.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\BOM\bom.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\BOM\bom.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\BOM\bom.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\BOM\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[BOM]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\BOM\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{7A0FBFB7-8486-4037-9EDF-D1730E2C35B4}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[ag-listenerfv.fl-0.fv.com.ar.WEBAPP.ssis_fenix 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\BOM\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\BOM\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CENTRO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CENTRO"
+                      externalMetadataColumnId="Package\BOM\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CENTRO]"
+                      lineageId="Package\BOM\bom.Outputs[Flat File Source Output].Columns[CENTRO]" />
+                    <inputColumn
+                      refId="Package\BOM\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ALTERNATIVA]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ALTERNATIVA"
+                      externalMetadataColumnId="Package\BOM\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ALTERNATIVA]"
+                      lineageId="Package\BOM\bom.Outputs[Flat File Source Output].Columns[ALTERNATIVA]" />
+                    <inputColumn
+                      refId="Package\BOM\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[POSICION]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="POSICION"
+                      externalMetadataColumnId="Package\BOM\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[POSICION]"
+                      lineageId="Package\BOM\bom.Outputs[Flat File Source Output].Columns[POSICION]" />
+                    <inputColumn
+                      refId="Package\BOM\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[COMPONENTE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="COMPONENTE"
+                      externalMetadataColumnId="Package\BOM\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COMPONENTE]"
+                      lineageId="Package\BOM\bom.Outputs[Flat File Source Output].Columns[COMPONENTE]" />
+                    <inputColumn
+                      refId="Package\BOM\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CODIGO MATERIAL]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CODIGO MATERIAL"
+                      externalMetadataColumnId="Package\BOM\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO_MATERIAL]"
+                      lineageId="Package\BOM\bom.Outputs[Flat File Source Output].Columns[CODIGO MATERIAL]" />
+                    <inputColumn
+                      refId="Package\BOM\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CANTIDAD BASE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CANTIDAD BASE"
+                      externalMetadataColumnId="Package\BOM\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD_BASE]"
+                      lineageId="Package\BOM\bom.Outputs[Flat File Source Output].Columns[CANTIDAD BASE]" />
+                    <inputColumn
+                      refId="Package\BOM\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CANTIDAD COMPONENTE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CANTIDAD COMPONENTE"
+                      externalMetadataColumnId="Package\BOM\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD_COMPONENTE]"
+                      lineageId="Package\BOM\bom.Outputs[Flat File Source Output].Columns[CANTIDAD COMPONENTE]" />
+                    <inputColumn
+                      refId="Package\BOM\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[UM COMPONENTE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="UM COMPONENTE"
+                      externalMetadataColumnId="Package\BOM\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UM_COMPONENTE]"
+                      lineageId="Package\BOM\bom.Outputs[Flat File Source Output].Columns[UM COMPONENTE]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\BOM\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO_MATERIAL]"
+                      dataType="wstr"
+                      length="50"
+                      name="CODIGO_MATERIAL" />
+                    <externalMetadataColumn
+                      refId="Package\BOM\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CENTRO]"
+                      dataType="wstr"
+                      length="50"
+                      name="CENTRO" />
+                    <externalMetadataColumn
+                      refId="Package\BOM\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ALTERNATIVA]"
+                      dataType="wstr"
+                      length="50"
+                      name="ALTERNATIVA" />
+                    <externalMetadataColumn
+                      refId="Package\BOM\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[POSICION]"
+                      dataType="wstr"
+                      length="50"
+                      name="POSICION" />
+                    <externalMetadataColumn
+                      refId="Package\BOM\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD_BASE]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD_BASE" />
+                    <externalMetadataColumn
+                      refId="Package\BOM\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COMPONENTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="COMPONENTE" />
+                    <externalMetadataColumn
+                      refId="Package\BOM\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD_COMPONENTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD_COMPONENTE" />
+                    <externalMetadataColumn
+                      refId="Package\BOM\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UM_COMPONENTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="UM_COMPONENTE" />
+                    <externalMetadataColumn
+                      refId="Package\BOM\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHALOG]"
+                      dataType="dbTimeStamp"
+                      name="FECHALOG" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\BOM\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\BOM\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\BOM\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\BOM\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\BOM\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\BOM\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\BOM.Paths[Flat File Source Output]"
+              endId="Package\BOM\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\BOM\bom.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{5ADEF870-B156-49EB-B0D0-7480BB2FDA34}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{7A0FBFB7-8486-4037-9EDF-D1730E2C35B4}"
+          SQLTask:SqlStatementSource="truncate table BOM&#xA;truncate table MATERIALES" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\INSERT EN WEBAPP"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{104E861B-9BFA-4082-8B91-FFAB0B6DA781}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="INSERT EN WEBAPP"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{7A0FBFB7-8486-4037-9EDF-D1730E2C35B4}"
+          SQLTask:SqlStatementSource="IF (SELECT Count(*) FROM sta.dbo.bom) &gt; 0&#xA;  BEGIN&#xA;      TRUNCATE TABLE bom&#xA;&#xA;      INSERT INTO bom&#xA;                  (CODIGO_MATERIAL,&#xA;                   CENTRO,&#xA;                   ALTERNATIVA,&#xA;                   POSICION,&#xA;                   CANTIDAD_BASE,&#xA;                   COMPONENTE,&#xA;                   CANTIDAD_COMPONENTE,&#xA;                   UM_COMPONENTE)&#xA;      SELECT CODIGO_MATERIAL,&#xA;             CENTRO,&#xA;             ALTERNATIVA,&#xA;             POSICION,&#xA;             CANTIDAD_BASE,&#xA;             COMPONENTE,&#xA;             CANTIDAD_COMPONENTE,&#xA;             UM_COMPONENTE&#xA;      FROM   sta.dbo.bom&#xA;  END  &#xA;&#xA;&#xA;IF (SELECT Count(*) FROM sta.dbo.mm_materiales) &gt; 0&#xA;  BEGIN&#xA;      TRUNCATE TABLE mm_materiales&#xA;&#xA;      INSERT INTO mm_materiales&#xA;                  (CENTRO,&#xA;       CODIGO_DE_MATERIAL,&#xA;       DENOMINACION,&#xA;       DENOMINACION_GRUPO_ARTICULO,&#xA;       UMB,&#xA;       STATUS_DE_MATERIAL,&#xA;       TIPO_DE_MATERIAL,&#xA;       GRUPO_DE_COMPRAS,&#xA;       MATERIAL_ANTERIOR,&#xA;       JERARQUIA,&#xA;       GRUPO_MATERIAL_1,&#xA;       GRUPO_MATERIAL_2,&#xA;       GRUPO_MATERIAL_3,&#xA;       PESO_NETO,&#xA;       PESO_BRUTO,&#xA;       UNIDAD_PESO,&#xA;       VOLUMEN,&#xA;       UNIDAD_VOLUMEN,&#xA;       DIMENSION,&#xA;       ESTADO_CADENA_DIST,&#xA;       NUMERO_EAN,&#xA;       CATEGORIA_DE_VALORACION,&#xA;       CENTRO_DE_BENEFICIO,&#xA;       GRUPO_DE_ARTICULO)&#xA; SELECT CENTRO,&#xA;       CODIGO_DE_MATERIAL,&#xA;       DENOMINACION,&#xA;       DENOMINACION_GRUPO_ARTICULO,&#xA;       UMB,&#xA;       STATUS_DE_MATERIAL,&#xA;       TIPO_DE_MATERIAL,&#xA;       GRUPO_DE_COMPRAS,&#xA;       MATERIAL_ANTERIOR,&#xA;       JERARQUIA,&#xA;       GRUPO_MATERIAL_1,&#xA;       GRUPO_MATERIAL_2,&#xA;       GRUPO_MATERIAL_3,&#xA;       PESO_NETO,&#xA;       PESO_BRUTO,&#xA;       UNIDAD_PESO,&#xA;       VOLUMEN,&#xA;       UNIDAD_VOLUMEN,&#xA;       DIMENSION,&#xA;       ESTADO_CADENA_DIST,&#xA;       NUMERO_EAN,&#xA;       CATEGORIA_DE_VALORACION,&#xA;       replace(CENTRO_DE_BENEFICIO,'|','') CENTRO_DE_BENEFICIO,&#xA;       GRUPO_DE_ARTICULO&#xA;FROM   sta.dbo.mm_materiales  &#xA;  END  " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\MATERAILES"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{B70F3ED1-9E65-4B28-BD4A-6FA386700720}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="MATERAILES"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\MATERAILES\OLE DB Destination 1"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination 1"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[MATERIALES]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\MATERAILES\OLE DB Destination 1.Connections[OleDbConnection]"
+                  connectionManagerID="{7A0FBFB7-8486-4037-9EDF-D1730E2C35B4}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[ag-listenerfv.fl-0.fv.com.ar.WEBAPP.ssis_fenix 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[CODIGO_DE_MATERIAL]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CODIGO_DE_MATERIAL"
+                      externalMetadataColumnId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO_DE_MATERIAL]"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[CODIGO_DE_MATERIAL]" />
+                    <inputColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DENOMINACION]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="DENOMINACION"
+                      externalMetadataColumnId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DENOMINACION]"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[DENOMINACION]" />
+                    <inputColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[TIPO_MATERIAL]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="TIPO_MATERIAL"
+                      externalMetadataColumnId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TIPO_MATERIAL]"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[TIPO_MATERIAL]" />
+                    <inputColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[MATERIAL_ANTERIOR]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="MATERIAL_ANTERIOR"
+                      externalMetadataColumnId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MATERIAL_ANTERIOR]"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[MATERIAL_ANTERIOR]" />
+                    <inputColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[JERARQUIA]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="JERARQUIA"
+                      externalMetadataColumnId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[JERARQUIA]"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[JERARQUIA]" />
+                    <inputColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[J1_DESCRIPCION]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="J1_DESCRIPCION"
+                      externalMetadataColumnId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[J1_DESCRIPCION]"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[J1_DESCRIPCION]" />
+                    <inputColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[J2_DESCRIPCION]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="J2_DESCRIPCION"
+                      externalMetadataColumnId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[J2_DESCRIPCION]"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[J2_DESCRIPCION]" />
+                    <inputColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[J3_DESCRIPCION]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="J3_DESCRIPCION"
+                      externalMetadataColumnId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[J3_DESCRIPCION]"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[J3_DESCRIPCION]" />
+                    <inputColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[GRUPO_MAT_1_DESCR]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="GRUPO_MAT_1_DESCR"
+                      externalMetadataColumnId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[GRUPO_MAT_1_DESCR]"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[GRUPO_MAT_1_DESCR]" />
+                    <inputColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[GRUPO_MAT_2_DESCR]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="GRUPO_MAT_2_DESCR"
+                      externalMetadataColumnId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[GRUPO_MAT_2_DESCR]"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[GRUPO_MAT_2_DESCR]" />
+                    <inputColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[GRUPO_MAT_3_DESCR]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="GRUPO_MAT_3_DESCR"
+                      externalMetadataColumnId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[GRUPO_MAT_3_DESCR]"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[GRUPO_MAT_3_DESCR]" />
+                    <inputColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[PESO_BRUTO]"
+                      cachedDataType="r8"
+                      cachedName="PESO_BRUTO"
+                      externalMetadataColumnId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[PESO_BRUTO]"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[PESO_BRUTO]" />
+                    <inputColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[UNIDAD_PESO]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="UNIDAD_PESO"
+                      externalMetadataColumnId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[UNIDAD_PESO]"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[UNIDAD_PESO]" />
+                    <inputColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[EAN]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="EAN"
+                      externalMetadataColumnId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[EAN]"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[EAN]" />
+                    <inputColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ESTADO_MATERIAL]"
+                      cachedDataType="wstr"
+                      cachedLength="24"
+                      cachedName="ESTADO_MATERIAL"
+                      externalMetadataColumnId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ESTADO_MATERIAL]"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[ESTADO_MATERIAL]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO_DE_MATERIAL]"
+                      dataType="wstr"
+                      length="50"
+                      name="CODIGO_DE_MATERIAL" />
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DENOMINACION]"
+                      dataType="wstr"
+                      length="50"
+                      name="DENOMINACION" />
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TIPO_MATERIAL]"
+                      dataType="wstr"
+                      length="10"
+                      name="TIPO_MATERIAL" />
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MATERIAL_ANTERIOR]"
+                      dataType="wstr"
+                      length="50"
+                      name="MATERIAL_ANTERIOR" />
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[JERARQUIA]"
+                      dataType="wstr"
+                      length="50"
+                      name="JERARQUIA" />
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[J1_DESCRIPCION]"
+                      dataType="wstr"
+                      length="50"
+                      name="J1_DESCRIPCION" />
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[J2_DESCRIPCION]"
+                      dataType="wstr"
+                      length="50"
+                      name="J2_DESCRIPCION" />
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[J3_DESCRIPCION]"
+                      dataType="wstr"
+                      length="50"
+                      name="J3_DESCRIPCION" />
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[GRUPO_MAT_1_DESCR]"
+                      dataType="wstr"
+                      length="50"
+                      name="GRUPO_MAT_1_DESCR" />
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[GRUPO_MAT_2_DESCR]"
+                      dataType="wstr"
+                      length="50"
+                      name="GRUPO_MAT_2_DESCR" />
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[GRUPO_MAT_3_DESCR]"
+                      dataType="wstr"
+                      length="50"
+                      name="GRUPO_MAT_3_DESCR" />
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[PESO_BRUTO]"
+                      dataType="r8"
+                      name="PESO_BRUTO" />
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[UNIDAD_PESO]"
+                      dataType="wstr"
+                      length="10"
+                      name="UNIDAD_PESO" />
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[EAN]"
+                      dataType="wstr"
+                      length="50"
+                      name="EAN" />
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ESTADO_MATERIAL]"
+                      dataType="wstr"
+                      length="50"
+                      name="ESTADO_MATERIAL" />
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
+                      dataType="dbTimeStamp"
+                      name="fecha" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\MATERAILES\OLE DB Destination 1.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\MATERAILES\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\MATERAILES\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\MATERAILES\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT CODIGO_DE_MATERIAL,
+       DENOMINACION,
+       TIPO_MATERIAL,
+       MATERIAL_ANTERIOR,
+       JERARQUIA,
+       J1_DESCRIPCION,
+       J2_DESCRIPCION,
+       J3_DESCRIPCION,
+       GRUPO_MAT_1_DESCR,
+       GRUPO_MAT_2_DESCR,
+       GRUPO_MAT_3_DESCR,
+       PESO_BRUTO,
+       UNIDAD_PESO,
+       EAN,
+       ESTADO_MATERIAL
+FROM   MATERIALES</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\MATERAILES\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="{7A0FBFB7-8486-4037-9EDF-D1730E2C35B4}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[ag-listenerfv.fl-0.fv.com.ar.WEBAPP.ssis_fenix 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[CODIGO_DE_MATERIAL]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CODIGO_DE_MATERIAL]"
+                      length="50"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[CODIGO_DE_MATERIAL]"
+                      name="CODIGO_DE_MATERIAL"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[DENOMINACION]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DENOMINACION]"
+                      length="50"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[DENOMINACION]"
+                      name="DENOMINACION"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[TIPO_MATERIAL]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[TIPO_MATERIAL]"
+                      length="10"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[TIPO_MATERIAL]"
+                      name="TIPO_MATERIAL"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[MATERIAL_ANTERIOR]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MATERIAL_ANTERIOR]"
+                      length="50"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[MATERIAL_ANTERIOR]"
+                      name="MATERIAL_ANTERIOR"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[JERARQUIA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[JERARQUIA]"
+                      length="50"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[JERARQUIA]"
+                      name="JERARQUIA"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[J1_DESCRIPCION]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[J1_DESCRIPCION]"
+                      length="50"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[J1_DESCRIPCION]"
+                      name="J1_DESCRIPCION"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[J2_DESCRIPCION]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[J2_DESCRIPCION]"
+                      length="50"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[J2_DESCRIPCION]"
+                      name="J2_DESCRIPCION"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[J3_DESCRIPCION]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[J3_DESCRIPCION]"
+                      length="50"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[J3_DESCRIPCION]"
+                      name="J3_DESCRIPCION"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[GRUPO_MAT_1_DESCR]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[GRUPO_MAT_1_DESCR]"
+                      length="50"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[GRUPO_MAT_1_DESCR]"
+                      name="GRUPO_MAT_1_DESCR"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[GRUPO_MAT_2_DESCR]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[GRUPO_MAT_2_DESCR]"
+                      length="50"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[GRUPO_MAT_2_DESCR]"
+                      name="GRUPO_MAT_2_DESCR"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[GRUPO_MAT_3_DESCR]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[GRUPO_MAT_3_DESCR]"
+                      length="50"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[GRUPO_MAT_3_DESCR]"
+                      name="GRUPO_MAT_3_DESCR"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[PESO_BRUTO]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PESO_BRUTO]"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[PESO_BRUTO]"
+                      name="PESO_BRUTO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[UNIDAD_PESO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[UNIDAD_PESO]"
+                      length="10"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[UNIDAD_PESO]"
+                      name="UNIDAD_PESO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[EAN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[EAN]"
+                      length="50"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[EAN]"
+                      name="EAN"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[ESTADO_MATERIAL]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ESTADO_MATERIAL]"
+                      length="24"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].Columns[ESTADO_MATERIAL]"
+                      name="ESTADO_MATERIAL"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CODIGO_DE_MATERIAL]"
+                      dataType="wstr"
+                      length="50"
+                      name="CODIGO_DE_MATERIAL" />
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DENOMINACION]"
+                      dataType="wstr"
+                      length="50"
+                      name="DENOMINACION" />
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[TIPO_MATERIAL]"
+                      dataType="wstr"
+                      length="10"
+                      name="TIPO_MATERIAL" />
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MATERIAL_ANTERIOR]"
+                      dataType="wstr"
+                      length="50"
+                      name="MATERIAL_ANTERIOR" />
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[JERARQUIA]"
+                      dataType="wstr"
+                      length="50"
+                      name="JERARQUIA" />
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[J1_DESCRIPCION]"
+                      dataType="wstr"
+                      length="50"
+                      name="J1_DESCRIPCION" />
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[J2_DESCRIPCION]"
+                      dataType="wstr"
+                      length="50"
+                      name="J2_DESCRIPCION" />
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[J3_DESCRIPCION]"
+                      dataType="wstr"
+                      length="50"
+                      name="J3_DESCRIPCION" />
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[GRUPO_MAT_1_DESCR]"
+                      dataType="wstr"
+                      length="50"
+                      name="GRUPO_MAT_1_DESCR" />
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[GRUPO_MAT_2_DESCR]"
+                      dataType="wstr"
+                      length="50"
+                      name="GRUPO_MAT_2_DESCR" />
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[GRUPO_MAT_3_DESCR]"
+                      dataType="wstr"
+                      length="50"
+                      name="GRUPO_MAT_3_DESCR" />
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PESO_BRUTO]"
+                      dataType="r8"
+                      name="PESO_BRUTO" />
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[UNIDAD_PESO]"
+                      dataType="wstr"
+                      length="10"
+                      name="UNIDAD_PESO" />
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[EAN]"
+                      dataType="wstr"
+                      length="50"
+                      name="EAN" />
+                    <externalMetadataColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ESTADO_MATERIAL]"
+                      dataType="wstr"
+                      length="50"
+                      name="ESTADO_MATERIAL" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CODIGO_DE_MATERIAL]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CODIGO_DE_MATERIAL]"
+                      name="CODIGO_DE_MATERIAL" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DENOMINACION]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DENOMINACION]"
+                      name="DENOMINACION" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[TIPO_MATERIAL]"
+                      dataType="wstr"
+                      length="10"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[TIPO_MATERIAL]"
+                      name="TIPO_MATERIAL" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MATERIAL_ANTERIOR]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MATERIAL_ANTERIOR]"
+                      name="MATERIAL_ANTERIOR" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[JERARQUIA]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[JERARQUIA]"
+                      name="JERARQUIA" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[J1_DESCRIPCION]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[J1_DESCRIPCION]"
+                      name="J1_DESCRIPCION" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[J2_DESCRIPCION]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[J2_DESCRIPCION]"
+                      name="J2_DESCRIPCION" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[J3_DESCRIPCION]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[J3_DESCRIPCION]"
+                      name="J3_DESCRIPCION" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[GRUPO_MAT_1_DESCR]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[GRUPO_MAT_1_DESCR]"
+                      name="GRUPO_MAT_1_DESCR" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[GRUPO_MAT_2_DESCR]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[GRUPO_MAT_2_DESCR]"
+                      name="GRUPO_MAT_2_DESCR" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[GRUPO_MAT_3_DESCR]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[GRUPO_MAT_3_DESCR]"
+                      name="GRUPO_MAT_3_DESCR" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PESO_BRUTO]"
+                      dataType="r8"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PESO_BRUTO]"
+                      name="PESO_BRUTO" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[UNIDAD_PESO]"
+                      dataType="wstr"
+                      length="10"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[UNIDAD_PESO]"
+                      name="UNIDAD_PESO" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[EAN]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[EAN]"
+                      name="EAN" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ESTADO_MATERIAL]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ESTADO_MATERIAL]"
+                      name="ESTADO_MATERIAL" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\MATERAILES.Paths[OLE DB Source Output]"
+              endId="Package\MATERAILES\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\MATERAILES\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{0A2126F3-2818-40CE-AC17-6542713D51B5}"
+      DTS:From="Package\Execute SQL Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\BOM" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{1ABA0379-1D79-4797-86F2-D9375A64A84A}"
+      DTS:From="Package\MATERAILES"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\INSERT EN WEBAPP" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{59130561-DF6B-4285-B264-19707589187F}"
+      DTS:From="Package\BOM"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\MATERAILES" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="104,42"
+          Id="Package\BOM"
+          TopLeft="108.374993005767,128.736844114319" />
+        <NodeLayout
+          Size="168,42.6666666666667"
+          Id="Package\Execute SQL Task"
+          TopLeft="86.2499959580602,36.7894747531316" />
+        <NodeLayout
+          Size="185.333333333334,42.6666666666667"
+          Id="Package\INSERT EN WEBAPP"
+          TopLeft="435.37500023283,129.473684068862" />
+        <NodeLayout
+          Size="149.333333333334,42"
+          Id="Package\MATERAILES"
+          TopLeft="235,177" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="170.24999595806,79.4561414197982">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-9.87500295229316,49.2807026945208"
+              Start="0,0"
+              End="-9.87500295229316,41.7807026945208">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.6403513472604" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.6403513472604"
+                    Point2="0,24.6403513472604"
+                    Point3="-4,24.6403513472604" />
+                  <mssgle:LineSegment
+                    End="-5.87500295229316,24.6403513472604" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-5.87500295229316,24.6403513472604"
+                    Point2="-9.87500295229316,24.6403513472604"
+                    Point3="-9.87500295229316,28.6403513472604" />
+                  <mssgle:LineSegment
+                    End="-9.87500295229316,41.7807026945208" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="384,198">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="51.37500023283,-47.026315931138"
+              Start="0,0"
+              End="43.87500023283,-47.026315931138">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="21.687500116415,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="21.687500116415,0"
+                    Point2="25.687500116415,0"
+                    Point3="25.687500116415,-4" />
+                  <mssgle:LineSegment
+                    End="25.687500116415,-43.026315931138" />
+                  <mssgle:CubicBezierSegment
+                    Point1="25.687500116415,-43.026315931138"
+                    Point2="25.687500116415,-47.026315931138"
+                    Point3="29.687500116415,-47.026315931138" />
+                  <mssgle:LineSegment
+                    End="43.87500023283,-47.026315931138" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="212.374993005767,149.736844114319">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="22.625006994233,48.263155885681"
+              Start="0,0"
+              End="15.125006994233,48.263155885681">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="7.3125034971165,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="7.3125034971165,0"
+                    Point2="11.3125034971165,0"
+                    Point3="11.3125034971165,4" />
+                  <mssgle:LineSegment
+                    End="11.3125034971165,44.263155885681" />
+                  <mssgle:CubicBezierSegment
+                    Point1="11.3125034971165,44.263155885681"
+                    Point2="11.3125034971165,48.263155885681"
+                    Point3="15.3125034971165,48.263155885681" />
+                  <mssgle:LineSegment
+                    End="15.125006994233,48.263155885681" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\BOM">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="101.333333333334,42.6666666666667"
+          Id="Package\BOM\bom"
+          TopLeft="185.37499419786,55.2631595560719" />
+        <NodeLayout
+          Size="174.666666666667,42.6666666666667"
+          Id="Package\BOM\OLE DB Destination"
+          TopLeft="434.124990863726,50.8421068601001" />
+        <EdgeLayout
+          Id="Package\BOM.Paths[Flat File Source Output]"
+          TopLeft="286.041660864527,74.3859665414193">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="148.083329999199,0"
+              Start="0,0"
+              End="140.583329999199,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="140.583329999199,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\BOM\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\MATERAILES">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="186,42"
+          Id="Package\MATERAILES\OLE DB Destination 1"
+          TopLeft="317,57" />
+        <NodeLayout
+          Size="157.333333333334,42"
+          Id="Package\MATERAILES\OLE DB Source"
+          TopLeft="60,60" />
+        <EdgeLayout
+          Id="Package\MATERAILES.Paths[OLE DB Source Output]"
+          TopLeft="217.333333333333,79.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="99.6666666666666,0"
+              Start="0,0"
+              End="92.1666666666666,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="92.1666666666666,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\MATERAILES\OLE DB Destination 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\MATERAILES\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

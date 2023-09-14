@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="2/23/2022 8:37:11 AM"
@@ -871,8 +871,8 @@ from MATERIALES</property>
               <connections>
                 <connection
                   refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{D097C6A4-C776-4F17-9E1D-26DD04966E6F}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[fe-sql02.STA.pconnon]"
+                  connectionManagerID="{D097C6A4-C776-4F17-9E1D-26DD04966E6F}:invalid"
+                  connectionManagerRefId="{D097C6A4-C776-4F17-9E1D-26DD04966E6F}:invalid"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1074,8 +1074,8 @@ from MATERIALES</property>
               <connections>
                 <connection
                   refId="Package\Data Flow Task\OLE DB Destination 1.Connections[OleDbConnection]"
-                  connectionManagerID="{D097C6A4-C776-4F17-9E1D-26DD04966E6F}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[fe-sql02.STA.pconnon]"
+                  connectionManagerID="{D097C6A4-C776-4F17-9E1D-26DD04966E6F}:invalid"
+                  connectionManagerRefId="{D097C6A4-C776-4F17-9E1D-26DD04966E6F}:invalid"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
