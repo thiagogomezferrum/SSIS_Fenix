@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{D3ECCE95-1902-4F31-83F0-C2F5378C521C}">
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{39191C1F-0358-4CDF-A6F4-AFEF03AF6EF8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -463,8 +463,8 @@ from MATERIALES</property>
               <connections>
                 <connection
                   refId="Package\Data Flow Task\materiales.Connections[OleDbConnection]"
-                  connectionManagerID="{06BE70C1-CEEC-4B56-8F8B-1D0ADCF12D6C}:invalid"
-                  connectionManagerRefId="{06BE70C1-CEEC-4B56-8F8B-1D0ADCF12D6C}:invalid"
+                  connectionManagerID="{7A0FBFB7-8486-4037-9EDF-D1730E2C35B4}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[ag-listenerfv.fl-0.fv.com.ar.WEBAPP.ssis_fenix 1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -697,7 +697,7 @@ from MATERIALES</property>
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Output].ExternalColumns[ESTADO_MATERIAL]"
                       dataType="wstr"
-                      length="24"
+                      length="50"
                       name="ESTADO_MATERIAL" />
                   </externalMetadataColumns>
                 </output>
@@ -792,7 +792,7 @@ from MATERIALES</property>
                     <outputColumn
                       refId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[ESTADO_MATERIAL]"
                       dataType="wstr"
-                      length="24"
+                      length="50"
                       lineageId="Package\Data Flow Task\materiales.Outputs[OLE DB Source Error Output].Columns[ESTADO_MATERIAL]"
                       name="ESTADO_MATERIAL" />
                     <outputColumn
@@ -871,8 +871,8 @@ from MATERIALES</property>
               <connections>
                 <connection
                   refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{D097C6A4-C776-4F17-9E1D-26DD04966E6F}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[fe-sql02.STA.pconnon]"
+                  connectionManagerID="{7A0FBFB7-8486-4037-9EDF-D1730E2C35B4}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[ag-listenerfv.fl-0.fv.com.ar.WEBAPP.ssis_fenix 1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1074,8 +1074,8 @@ from MATERIALES</property>
               <connections>
                 <connection
                   refId="Package\Data Flow Task\OLE DB Destination 1.Connections[OleDbConnection]"
-                  connectionManagerID="{D097C6A4-C776-4F17-9E1D-26DD04966E6F}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[fe-sql02.STA.pconnon]"
+                  connectionManagerID="{7A0FBFB7-8486-4037-9EDF-D1730E2C35B4}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[ag-listenerfv.fl-0.fv.com.ar.WEBAPP.ssis_fenix 1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1328,7 +1328,7 @@ from MATERIALES</property>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{D097C6A4-C776-4F17-9E1D-26DD04966E6F}"
+          SQLTask:Connection="{CCB5EA22-E1A1-43A3-A9BF-092351FCA7B5}"
           SQLTask:SqlStatementSource="truncate table sta.dbo.bom&#xA;truncate table sta.dbo.materiales" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -1408,7 +1408,7 @@ from MATERIALES</property>
         <NodeLayout
           Size="177.333333333334,42"
           Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="370,82" />
+          TopLeft="368.12500002794,84.0526316175831" />
         <NodeLayout
           Size="186,42"
           Id="Package\Data Flow Task\OLE DB Destination 1"
@@ -1457,18 +1457,18 @@ from MATERIALES</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Flat File Source Output]"
-          TopLeft="247,104">
+          TopLeft="247,105.026315808792">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="123,0"
+              EndConnector="121.12500002794,0"
               Start="0,0"
-              End="115.5,0">
+              End="113.62500002794,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="115.5,0" />
+                    End="113.62500002794,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
