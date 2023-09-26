@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="39"
-  DTS:VersionGUID="{D7D18A5A-4683-4805-9548-F5ADC885BC27}">
+  DTS:VersionBuild="42"
+  DTS:VersionGUID="{AF5D3FCC-3EA8-4C0C-A1AA-272A7A869583}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -812,7 +812,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[pp_bom]</property>
+                  name="OpenRowset">[dbo].[BOM_TEMP]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -821,7 +821,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -855,8 +855,8 @@
               <connections>
                 <connection
                   refId="Package\BOM\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{CCB5EA22-E1A1-43A3-A9BF-092351FCA7B5}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[fer-sql01-vr.STA.pbi_ferrum]"
+                  connectionManagerID="{7A0FBFB7-8486-4037-9EDF-D1730E2C35B4}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[ag-listenerfv.fl-0.fv.com.ar.WEBAPP.ssis_fenix 1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -968,9 +968,9 @@
                       length="50"
                       name="UM_COMPONENTE" />
                     <externalMetadataColumn
-                      refId="Package\BOM\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
+                      refId="Package\BOM\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHALOG]"
                       dataType="dbTimeStamp"
-                      name="fecha" />
+                      name="FECHALOG" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -1022,8 +1022,8 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{CCB5EA22-E1A1-43A3-A9BF-092351FCA7B5}"
-          SQLTask:SqlStatementSource="truncate table pp_bom&#xA;truncate table MM_MATERIALES" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:Connection="{7A0FBFB7-8486-4037-9EDF-D1730E2C35B4}"
+          SQLTask:SqlStatementSource="truncate table BOM_TEMP&#xA;truncate table MM_MATERIALES_TEMP" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -2213,7 +2213,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[mm_materiales]</property>
+                  name="OpenRowset">[dbo].[MM_MATERIALES_TEMP]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -2222,7 +2222,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -2256,8 +2256,8 @@
               <connections>
                 <connection
                   refId="Package\mm_materiales\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{CCB5EA22-E1A1-43A3-A9BF-092351FCA7B5}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[fer-sql01-vr.STA.pbi_ferrum]"
+                  connectionManagerID="{7A0FBFB7-8486-4037-9EDF-D1730E2C35B4}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[ag-listenerfv.fl-0.fv.com.ar.WEBAPP.ssis_fenix 1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2810,11 +2810,6 @@
                       refId="Package\mm_materiales\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
                       dataType="dbTimeStamp"
                       name="fecha" />
-                    <externalMetadataColumn
-                      refId="Package\mm_materiales\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[GRUPO_ORIGEN_COSTOS]"
-                      dataType="wstr"
-                      length="50"
-                      name="GRUPO_ORIGEN_COSTOS" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -2922,7 +2917,7 @@
           Id="Package\mm_materiales"
           TopLeft="235,177" />
         <NodeLayout
-          Size="208,42"
+          Size="204,42.6666666666667"
           Id="Package\SAP_MATERIALES_BOM"
           TopLeft="413.37500023283,129.473684068862" />
         <EdgeLayout
@@ -2965,9 +2960,9 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="24.37500023283,-47.526315931138"
+              EndConnector="24.37500023283,-47.1929825978046"
               Start="0,0"
-              End="16.87500023283,-47.526315931138">
+              End="16.87500023283,-47.1929825978046">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -2978,13 +2973,13 @@
                     Point2="12.187500116415,0"
                     Point3="12.187500116415,-4" />
                   <mssgle:LineSegment
-                    End="12.187500116415,-43.526315931138" />
+                    End="12.187500116415,-43.1929825978046" />
                   <mssgle:CubicBezierSegment
-                    Point1="12.187500116415,-43.526315931138"
-                    Point2="12.187500116415,-47.526315931138"
-                    Point3="16.187500116415,-47.526315931138" />
+                    Point1="12.187500116415,-43.1929825978046"
+                    Point2="12.187500116415,-47.1929825978046"
+                    Point3="16.187500116415,-47.1929825978046" />
                   <mssgle:LineSegment
-                    End="16.87500023283,-47.526315931138" />
+                    End="16.87500023283,-47.1929825978046" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

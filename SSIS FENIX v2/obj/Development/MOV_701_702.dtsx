@@ -12,7 +12,7 @@
   DTS:ObjectName="Package"
   DTS:PackageType="5"
   DTS:VersionBuild="46"
-  DTS:VersionGUID="{70FB03AD-FC47-4DF8-8EA4-2AB47393EA24}">
+  DTS:VersionGUID="{FFB6EF0F-3D53-4BB7-B50C-7E85C1787BE7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -412,7 +412,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">exec [INTERFAZ_ABM_INVENTARIO_FENIX] 'semanal'</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">exec [INTERFAZ_ABM_INVENTARIO_FENIX] 'semanal'</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -866,7 +866,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">exec [INTERFAZ_ABM_INVENTARIO_FENIX] 'semanal'</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">exec [INTERFAZ_ABM_INVENTARIO_FENIX] 'semanal'</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."

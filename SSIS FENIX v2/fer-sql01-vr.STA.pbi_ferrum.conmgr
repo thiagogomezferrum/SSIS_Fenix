@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:ObjectName="fer-sql01-vr.STA.pbi_ferrum"
   DTS:DTSID="{CCB5EA22-E1A1-43A3-A9BF-092351FCA7B5}"
@@ -10,7 +10,7 @@
       DTS:ConnectionString="Data Source=fer-sql01-vr;User ID=pbi_ferrum;Initial Catalog=STA;Provider=SQLNCLI11.1;Persist Security Info=True;Application Name=SSIS-SSIS FENIX-{CCB5EA22-E1A1-43A3-A9BF-092351FCA7B5}fer-sql01-vr.STA.pbi_ferrum;Auto Translate=False;">
       <DTS:Password
         DTS:Name="Password"
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAALUq5K1h3I0KtdgjXNSJx2gAAAAACAAAAAAADZgAAwAAAABAAAAC86H45/xqGVVi1gcbg+qWZAAAAAASAAACgAAAAEAAAAH54bvHS3SO9DL7p2M76wqKAAAAACrvY2M572Sj3uCD2O9DwzqT3yIu5NlamXoMiJOMquMUV6VosW08iW5aecOajDa1gB0rfwdgvTHW8Lj5pno9FiNe9al5be61yCApFz1xbF9yklDbIibyd6LT9z8Ly3bYQay/QcuXeC9ZhPfNueDXMr+DwblrFdmBm044NYzeDWy0UAAAAaaUj5EziSUu02EI6ly2SFgYwpVA=</DTS:Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAALUq5K1h3I0KtdgjXNSJx2gAAAAACAAAAAAADZgAAwAAAABAAAADExrzE7AF60LKiOtHipb4JAAAAAASAAACgAAAAEAAAABFJzVwB3G/YCQjlJ0AwCT+AAAAAoqgmjUbxhYFNp2UZztQSoejhgYHzU+Z69q8J9cxsZ/V9a3zQ2NWNG6VBHhr0f6VZjgaQ3JkvU9DDER3fwJwh+oC9mONfhtDrg6iQ41jjgZbrIankvkjXE7koHFdtkvnuXGgMRmzxQvCdLZBt8KJtOmb+hNX2MM05V1XCgxVLrYAUAAAA6gHT8xX+tRgEMg3LZdZv7dLuznI=</DTS:Password>
     </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>

@@ -12,7 +12,7 @@
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
   DTS:VersionBuild="8"
-  DTS:VersionGUID="{BC6A9FE5-90AA-4DF4-8A10-FF2F9704D621}">
+  DTS:VersionGUID="{FDE75A9B-0962-4721-82B3-14C45FFF9DBE}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -460,7 +460,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from PROD_PARA_AS400</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from PROD_PARA_AS400</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
