@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="8/2/2023 3:52:49 PM"
@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{FDE75A9B-0962-4721-82B3-14C45FFF9DBE}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{E058FF56-86C2-49E1-8327-7F1189024CA0}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="\\fe-files01\ferrum_fabrica\Interfaces_Fenix\Parte_Prod\PARTE_FENIX_AS400.csv">
+          DTS:ConnectionString="\\fe-files01.ferrum.local\ferrum_fabrica\Interfaces_Fenix\Parte_Prod\PARTE_FENIX_AS400.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -37,7 +37,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="FPRODD"
-              DTS:DTSID="{691235DD-0C6F-4BFC-9235-8A92B9EA6624}"
+              DTS:DTSID="{620A362D-B19B-4C5E-81D8-26DE4F2BDD56}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -45,7 +45,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="FPROMM"
-              DTS:DTSID="{F4443A1A-481D-4612-B603-3B001DFE4D11}"
+              DTS:DTSID="{6FE8F7A1-602C-43A4-AB4F-4B3FFB5162EB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -53,7 +53,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="FPROAA"
-              DTS:DTSID="{AEE11542-1CFB-4539-94B7-D00C1A75A821}"
+              DTS:DTSID="{249E842D-02B1-4431-A6E9-E770AA453563}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -62,7 +62,7 @@
               DTS:DataPrecision="11"
               DTS:TextQualified="True"
               DTS:ObjectName="CDEPTO"
-              DTS:DTSID="{C25860A1-35C4-47DA-820C-5E63BBA57DE9}"
+              DTS:DTSID="{B8B6E8F7-15D0-40BF-88C2-FF6E8EB4FB2B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -71,7 +71,7 @@
               DTS:DataPrecision="11"
               DTS:TextQualified="True"
               DTS:ObjectName="NOPER"
-              DTS:DTSID="{E521940E-22CB-4A34-8E50-508A8CE97CD6}"
+              DTS:DTSID="{EABF50FD-7BBA-41AC-AF3C-646D225F13F4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -80,7 +80,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CSIMB"
-              DTS:DTSID="{E292B077-7C7E-4291-BBA7-98B57FF4880A}"
+              DTS:DTSID="{D3404E78-305D-4376-BF33-92B41F207475}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -89,7 +89,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="COPERA"
-              DTS:DTSID="{FB27B0E7-C3EE-4AED-9C75-8C7C16698E5B}"
+              DTS:DTSID="{59715532-A9B0-44C4-99B7-3D9DBFBA9141}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -98,7 +98,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="NORDEN"
-              DTS:DTSID="{44DD3DE6-8525-4D8D-BC69-6422CB2C29DD}"
+              DTS:DTSID="{86371F8A-8C13-49B5-9DDA-696891CE4730}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -106,7 +106,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="KPIEHE"
-              DTS:DTSID="{527E2981-3B56-40A0-81B8-A50F4D17A3BA}"
+              DTS:DTSID="{38818AFC-7E66-4C22-B6B5-725F76D2A935}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -114,7 +114,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="KFALLA"
-              DTS:DTSID="{5E8AEFCB-F8D3-4E5E-AE6F-7EF693697E4A}"
+              DTS:DTSID="{ADECDCCB-A7AB-40BA-A37A-22DD935371A3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -122,7 +122,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="KRECHE"
-              DTS:DTSID="{38C58C97-CCAA-4327-9BF2-48817ABEFBF1}"
+              DTS:DTSID="{8EF61186-46A5-4D05-8FFF-DA79C9022F6E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -131,7 +131,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CTERME"
-              DTS:DTSID="{8396A38B-E05E-4707-880A-C61AB3E4CABA}"
+              DTS:DTSID="{8868C2DC-E0D8-439B-8598-5B47ACE1B5DC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -140,7 +140,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ID_PLANTA"
-              DTS:DTSID="{5AE99C12-69E7-4CD6-AA5A-15DC7950BEF9}"
+              DTS:DTSID="{6781E1B5-A0FB-4988-A6BF-9D414665A3B8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -149,7 +149,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="SUPERVISOR"
-              DTS:DTSID="{032B5B9C-C965-4E29-A698-246F7DFA7493}"
+              DTS:DTSID="{9C342603-D782-4911-974F-6C033604B0CC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -158,7 +158,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="AS_TIPO_LINEA"
-              DTS:DTSID="{9C97F01F-1F61-4650-9D62-115C1521CF45}"
+              DTS:DTSID="{AC2A1B34-E28C-41C6-8333-5E1F86872796}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -167,7 +167,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="AS_LINEA"
-              DTS:DTSID="{3DA47041-3113-4E59-B027-5E39598E6B13}"
+              DTS:DTSID="{FC16C849-9595-4CD6-8104-DED6D6E72927}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -176,7 +176,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="AS_SUBLINEA"
-              DTS:DTSID="{BDAD7270-60F2-49E9-A2C4-37FA6C877D4C}"
+              DTS:DTSID="{CCC2D046-2386-4B55-BB5F-B05CA01F6AA3}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -486,8 +486,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="{7A0FBFB7-8486-4037-9EDF-D1730E2C35B4}:invalid"
-                  connectionManagerRefId="{7A0FBFB7-8486-4037-9EDF-D1730E2C35B4}:invalid"
+                  connectionManagerID="{7A0FBFB7-8486-4037-9EDF-D1730E2C35B4}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[ag-listenerfv.fl-0.fv.com.ar.WEBAPP.ssis_fenix 1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
